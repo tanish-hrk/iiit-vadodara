@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIIT Vadodara — Indian Institute of Information Technology Vadodara</title>
+    <meta name="description" content="Indian Institute of Information Technology Vadodara (IIIT V) — An Institute of National Importance established by the Ministry of Education, Government of India under PPP model. Offering BTech, MTech, MCA, PhD programs.">
+    <meta property="og:title" content="IIIT Vadodara — Indian Institute of Information Technology Vadodara">
+    <meta property="og:description" content="An Institute of National Importance offering excellence in technology, innovation, and research.">
+    <meta property="og:image" content="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="page-loader">
+        <div class="loader-content">
+            <div class="loader-spinner">
+                <img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="IIIT Vadodara Logo" class="loader-logo">
+            </div>
+            <p class="loader-text">Loading IIIT Vadodara</p>
+        </div>
+    </div>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar at-top" id="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="IIIT Vadodara Home">
+                <img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="IIIT Vadodara Logo" loading="lazy">
+                <div class="nav-logo-text">
+                    <span class="eng">Indian Institute of Information Technology Vadodara</span>
+                    <span class="hindi hindi-text">भारतीय सूचना प्रौद्योगिकी संस्‍थान वडोदरा</span>
+                </div>
+            </a>
+
+            <div class="nav-toggle" id="nav-toggle" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About <span class="arrow">▼</span></a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><a href="about.html" class="dropdown-link">Institute</a></li>
+                        <li class="dropdown-item"><a href="about.html#vision" class="dropdown-link">Vision &amp; Mission</a></li>
+                        <li class="dropdown-item"><a href="about.html#director" class="dropdown-link">Director</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/industry_partners.php" class="dropdown-link" target="_blank" rel="noopener">PPP Partners</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/bog.php" class="dropdown-link" target="_blank" rel="noopener">Board of Governors</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/senate.php" class="dropdown-link" target="_blank" rel="noopener">Senate</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/annual_reports.php" class="dropdown-link" target="_blank" rel="noopener">Annual Reports</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/faqs.php" class="dropdown-link" target="_blank" rel="noopener">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Academics <span class="arrow">▼</span></a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><a href="academics.html" class="dropdown-link">BTech (Under Graduate)</a></li>
+                        <li class="dropdown-item"><a href="academics.html#mtech" class="dropdown-link">MTech (Post Graduate)</a></li>
+                        <li class="dropdown-item"><a href="academics.html#mca" class="dropdown-link">MCA</a></li>
+                        <li class="dropdown-item"><a href="academics.html#phd" class="dropdown-link">PhD (Doctoral)</a></li>
+                        <li class="dropdown-item"><a href="academics.html#bsc" class="dropdown-link">BSc (Online)</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/act_statutes_ordinance.php" class="dropdown-link" target="_blank" rel="noopener">Academic Ordinances</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Admission <span class="arrow">▼</span></a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><a href="admission.html" class="dropdown-link">BTech (JoSSA / CSAB)</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/btechdasa.php" class="dropdown-link" target="_blank" rel="noopener">BTech (DASA)</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/mtech_admissions.php" class="dropdown-link" target="_blank" rel="noopener">MTech</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/mca_admissions.php" class="dropdown-link" target="_blank" rel="noopener">MCA</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/phd_admissions.php" class="dropdown-link" target="_blank" rel="noopener">PhD</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/bsc_admissions.php" class="dropdown-link" target="_blank" rel="noopener">BSc (Online)</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Research <span class="arrow">▼</span></a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><a href="research.html" class="dropdown-link">Publications</a></li>
+                        <li class="dropdown-item"><a href="https://researchpublication.iiitvadodara.ac.in/" class="dropdown-link" target="_blank" rel="noopener">Research Highlights</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/sponsored_projects.php" class="dropdown-link" target="_blank" rel="noopener">Sponsored Projects</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/Seminar.php" class="dropdown-link" target="_blank" rel="noopener">Seminars</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">People <span class="arrow">▼</span></a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><a href="people.html" class="dropdown-link">CSE Faculty</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/ece.php" class="dropdown-link" target="_blank" rel="noopener">ECE Faculty</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/smh1.php" class="dropdown-link" target="_blank" rel="noopener">Maths & Computing</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/smh.php" class="dropdown-link" target="_blank" rel="noopener">Applied Physics</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/officers.php" class="dropdown-link" target="_blank" rel="noopener">Officers</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/administrative.php" class="dropdown-link" target="_blank" rel="noopener">Administrative Staff</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Students <span class="arrow">▼</span></a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><a href="students.html" class="dropdown-link">Students Corner</a></li>
+                        <li class="dropdown-item"><a href="placement.html" class="dropdown-link">Placements</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/library.php" class="dropdown-link" target="_blank" rel="noopener">Library</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/hostel.php" class="dropdown-link" target="_blank" rel="noopener">Hostel</a></li>
+                        <li class="dropdown-item"><a href="https://gymkhana.iiitvadodara.ac.in/" class="dropdown-link" target="_blank" rel="noopener">Gymkhana</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/alumni.php" class="dropdown-link" target="_blank" rel="noopener">Alumni</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="jobs.html" class="nav-link">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero" id="hero">
+            <div class="hero-slider">
+                <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1562774053-701939374585?w=1920&q=80')"></div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80')"></div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1920&q=80')"></div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80')"></div>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-particles" id="hero-particles"></div>
+
+            <div class="hero-content">
+                <div class="hero-badge reveal">🏛️ An Institute of National Importance</div>
+                <h1 class="reveal">Indian Institute of Information Technology Vadodara</h1>
+                <p class="hindi-subtitle reveal hindi-text">भारतीय सूचना प्रौद्योगिकी संस्‍थान वडोदरा</p>
+                <div class="typed-wrapper reveal">
+                    <span class="typed-text"></span><span class="typed-cursor">|</span>
+                </div>
+                <div class="hero-buttons reveal">
+                    <a href="academics.html" class="btn btn-primary">Explore Programs →</a>
+                    <a href="admission.html" class="btn btn-ghost">Apply Now</a>
+                </div>
+            </div>
+
+            <a href="#ticker" class="scroll-indicator" aria-label="Scroll down">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+            </a>
+        </section>
+
+        <!-- ===== ANNOUNCEMENT TICKER ===== -->
+        <section class="ticker" id="ticker">
+            <div class="ticker-label">📢 LATEST</div>
+            <div class="ticker-content">
+                <div class="ticker-item"><a href="https://iiitvadodara.ac.in/phd_admissions.php" target="_blank" rel="noopener">PhD Admissions (Autumn 2026-27) — Apply Now</a></div>
+                <div class="ticker-item"><a href="https://convocation.iiitvadodara.ac.in/" target="_blank" rel="noopener">Convocation 14 Dec 2025 — Register</a></div>
+                <div class="ticker-item"><a href="https://iiitvadodara.ac.in/announcements.php" target="_blank" rel="noopener">Advertisement for Research Associate Position: Multisensor Data based Automated Crop Stress Management</a></div>
+                <div class="ticker-item"><a href="https://iiitvadodara.ac.in/announcements.php" target="_blank" rel="noopener">Selection for the post of Assistant Registrar</a></div>
+                <div class="ticker-item"><a href="https://qippg.aicte.gov.in/" target="_blank" rel="noopener">QIP PG Registration Open — AI & Cybersecurity</a></div>
+                <div class="ticker-item"><a href="https://iiitvadodara.ac.in/eoi.php" target="_blank" rel="noopener">Expression of Interest (IIITV - ICD) Open</a></div>
+                <!-- Duplicate for seamless scroll -->
+                <div class="ticker-item"><a href="https://iiitvadodara.ac.in/phd_admissions.php" target="_blank" rel="noopener">PhD Admissions (Autumn 2026-27) — Apply Now</a></div>
+                <div class="ticker-item"><a href="https://convocation.iiitvadodara.ac.in/" target="_blank" rel="noopener">Convocation 14 Dec 2025 — Register</a></div>
+                <div class="ticker-item"><a href="https://iiitvadodara.ac.in/announcements.php" target="_blank" rel="noopener">Advertisement for Research Associate Position: Multisensor Data based Automated Crop Stress Management</a></div>
+                <div class="ticker-item"><a href="https://iiitvadodara.ac.in/announcements.php" target="_blank" rel="noopener">Selection for the post of Assistant Registrar</a></div>
+                <div class="ticker-item"><a href="https://qippg.aicte.gov.in/" target="_blank" rel="noopener">QIP PG Registration Open — AI & Cybersecurity</a></div>
+                <div class="ticker-item"><a href="https://iiitvadodara.ac.in/eoi.php" target="_blank" rel="noopener">Expression of Interest (IIITV - ICD) Open</a></div>
+            </div>
+        </section>
+
+        <!-- ===== STATS SECTION ===== -->
+        <section class="section stats-section" id="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card reveal">
+                        <div class="stat-icon">🎓</div>
+                        <div class="stat-number" data-target="1200" data-suffix="+">0</div>
+                        <div class="stat-label">Students Enrolled</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon">👨‍🏫</div>
+                        <div class="stat-number" data-target="65" data-suffix="+">0</div>
+                        <div class="stat-label">Faculty Members</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon">📄</div>
+                        <div class="stat-number" data-target="500" data-suffix="+">0</div>
+                        <div class="stat-label">Research Papers</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon">💼</div>
+                        <div class="stat-number" data-target="95" data-suffix="%">0</div>
+                        <div class="stat-label">Placement Rate</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon">🏢</div>
+                        <div class="stat-number" data-target="120" data-suffix="+">0</div>
+                        <div class="stat-label">Companies Visited</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon">🏆</div>
+                        <div class="stat-number" data-target="11" data-suffix="">0</div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT SECTION ===== -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-wrapper reveal-left">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80" alt="IIIT Vadodara Campus" loading="lazy">
+                    </div>
+                    <div class="about-content reveal-right">
+                        <div class="established-badge">🏛️ Established 2013 under IIIT PPP Act</div>
+                        <h2>About IIIT Vadodara</h2>
+                        <p>Indian Institute of Information Technology Vadodara (IIIT V) is established by the Ministry of Education (MoE), Government of India under Public Private Partnership (PPP) as an Institute of National Importance with a view to develop new knowledge in information technology and to provide manpower of global standards for the information technology industry.</p>
+                        <p>The partners in this project are Government of India, Government of Gujarat, Gujarat Energy Research and Management Institute, Gujarat State Fertilizers and Chemicals Ltd and Tata Consultancy Services.</p>
+
+                        <div class="about-features">
+                            <div class="about-feature">
+                                <span class="about-feature-icon">✦</span>
+                                <span>Institute of National Importance</span>
+                            </div>
+                            <div class="about-feature">
+                                <span class="about-feature-icon">✦</span>
+                                <span>PPP Model with Industry</span>
+                            </div>
+                            <div class="about-feature">
+                                <span class="about-feature-icon">✦</span>
+                                <span>62.5 Acres Dumad Campus</span>
+                            </div>
+                            <div class="about-feature">
+                                <span class="about-feature-icon">✦</span>
+                                <span>Cutting-Edge Research</span>
+                            </div>
+                        </div>
+
+                        <a href="about.html" class="btn btn-outline" style="margin-top: 24px;">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROGRAMS SECTION ===== -->
+        <section class="section programs-section" id="programs">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="reveal">Academic Programs</h2>
+                    <p class="reveal">Empowering minds through world-class education in technology and research</p>
+                </div>
+                <div class="programs-grid">
+                    <div class="program-card reveal">
+                        <div class="program-card-header">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=80" alt="BTech Program" loading="lazy">
+                            <div class="program-card-icon">💻</div>
+                        </div>
+                        <div class="program-card-body">
+                            <h3>B.Tech</h3>
+                            <span class="program-duration">4 Years</span>
+                            <p>Computer Science & Engineering, Electronics & Communication Engineering, and Information Technology</p>
+                        </div>
+                    </div>
+                    <div class="program-card reveal">
+                        <div class="program-card-header">
+                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500&q=80" alt="MTech Program" loading="lazy">
+                            <div class="program-card-icon">🔬</div>
+                        </div>
+                        <div class="program-card-body">
+                            <h3>M.Tech</h3>
+                            <span class="program-duration">2 Years</span>
+                            <p>Specializations in Computer Science & Engineering with focus on AI, Data Science, and Cybersecurity</p>
+                        </div>
+                    </div>
+                    <div class="program-card reveal">
+                        <div class="program-card-header">
+                            <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=500&q=80" alt="MCA Program" loading="lazy">
+                            <div class="program-card-icon">📱</div>
+                        </div>
+                        <div class="program-card-body">
+                            <h3>MCA</h3>
+                            <span class="program-duration">2 Years</span>
+                            <p>Master of Computer Applications with comprehensive software development and application design training</p>
+                        </div>
+                    </div>
+                    <div class="program-card reveal">
+                        <div class="program-card-header">
+                            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=500&q=80" alt="PhD Program" loading="lazy">
+                            <div class="program-card-icon">🎓</div>
+                        </div>
+                        <div class="program-card-body">
+                            <h3>Ph.D.</h3>
+                            <span class="program-duration">3-5 Years</span>
+                            <p>Doctoral research programs in CSE, ECE, Mathematics, Physics, and Humanities across diverse domains</p>
+                        </div>
+                    </div>
+                    <div class="program-card reveal">
+                        <div class="program-card-header">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500&q=80" alt="BSc Online Program" loading="lazy">
+                            <div class="program-card-icon">🌐</div>
+                        </div>
+                        <div class="program-card-body">
+                            <h3>B.Sc. (Online)</h3>
+                            <span class="program-duration">3 Years</span>
+                            <p>Online Bachelor of Science program offering flexible learning with industry-relevant curriculum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== NEWS & EVENTS ===== -->
+        <section class="section news-section" id="news">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="reveal">News & Events</h2>
+                    <p class="reveal">Stay updated with the latest happenings at IIIT Vadodara</p>
+                </div>
+                <div class="news-grid">
+                    <div class="news-column reveal">
+                        <h3>📰 Latest News</h3>
+                        <div class="news-item">
+                            <div class="news-date">10 Jan 2026</div>
+                            <a href="https://iiitvadodara.ac.in/news.php" target="_blank" rel="noopener">IIIT Vadodara, in collaboration with IIT Gandhinagar, successfully organized the One-Day Workshop under Phase II of the Rashtriya Karmayogi Large-Scale Jan Seva Program.</a>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-date">20-22 Nov 2025</div>
+                            <a href="https://iiitvadodara.ac.in/news.php" target="_blank" rel="noopener">Varad Vyavhare (B.Tech. CSE) received first prize at Adani Global Indology Conclave in Edutainment Sciences.</a>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-date">May 2025</div>
+                            <a href="https://iiitvadodara.ac.in/news.php" target="_blank" rel="noopener">Mr. Satyam Bharatbhai Aniyaliya secured 3rd place in 'Reduce E-Waste' category in Ideas4Life initiative by MoEFCC.</a>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-date">20-23 Mar 2025</div>
+                            <a href="https://iiitvadodara.ac.in/news.php" target="_blank" rel="noopener">IIITV students won Gold in Cricket, Silver in Table Tennis and Badminton at 7th Inter IIIT Sports Meet.</a>
+                        </div>
+                    </div>
+                    <div class="news-column reveal">
+                        <h3>🎯 Upcoming Events</h3>
+                        <div class="news-item">
+                            <div class="news-date">13 Mar 2026</div>
+                            <a href="https://iiitvadodara.ac.in/events.php" target="_blank" rel="noopener">Doctor–Academia Meet</a>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-date">28 Feb - 1 Mar 2026</div>
+                            <a href="https://iiitvadodara.ac.in/events.php" target="_blank" rel="noopener">Karyashala GenAI-Health</a>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-date">19-20 Dec 2025</div>
+                            <a href="https://iiitvadodara.ac.in/events.php" target="_blank" rel="noopener">International Conference — HACER 2025</a>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-date">23-24 Aug 2025</div>
+                            <a href="https://iiitvadodara.ac.in/events.php" target="_blank" rel="noopener">9th Prof. Vijaya Agarwala Memorial National Workshop on Microwave Absorbing Materials (VAMMAM-2025)</a>
+                        </div>
+                    </div>
+                    <div class="news-column reveal">
+                        <h3>📢 Notices</h3>
+                        <div class="news-item">
+                            <a href="https://iiitvadodara.ac.in/phd_admissions.php" target="_blank" rel="noopener">PhD admissions (Autumn 2026-27) — Applications Open</a>
+                        </div>
+                        <div class="news-item">
+                            <a href="https://elearning.wininfosoft.com/" target="_blank" rel="noopener">Explore Python 2.0 — Learn, Code, Build</a>
+                        </div>
+                        <div class="news-item">
+                            <a href="https://drive.google.com/file/d/1hghTnLc-ZQQexOBcxOMphjDjw7izKSzz/view" target="_blank" rel="noopener">PNB Pratibha Scheme — Education Loan without collateral up to ₹20 Lakhs</a>
+                        </div>
+                        <div class="news-item">
+                            <a href="https://drive.google.com/file/d/1-UNuXaFKa7L6ZPVmvahBJverNVfe-rYK/view" target="_blank" rel="noopener">SBI Scholar Loan — Up to ₹20 Lakhs without Collateral</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DIRECTOR'S MESSAGE ===== -->
+        <section class="section director-section" id="director">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="reveal">Director's Message</h2>
+                </div>
+                <div class="director-card reveal">
+                    <div class="director-image">
+                        <img src="https://iiitvadodara.ac.in/assets/images/director.jpg" alt="Prof. Dharmendra Singh, Director IIIT Vadodara" loading="lazy">
+                        <div class="director-name">
+                            <h3>Prof. Dharmendra Singh</h3>
+                            <p>Director, IIIT Vadodara</p>
+                        </div>
+                    </div>
+                    <div class="director-message">
+                        <div class="quote-mark">"</div>
+                        <h3>Welcome to IIIT Vadodara</h3>
+                        <p>Welcome to IIIT Vadodara, where innovation meets excellence. As an institution, academia has been a cornerstone of inspiration, driving both individual and organizational motivation. It is through quality education that we broaden our horizons for personal growth and contribute significantly to societal advancement in technical innovation and development.</p>
+                        <p>At IIIT Vadodara, our vision is clear: to harness the boundless talents of our youth and propel them towards global innovation. We are committed to building a community of motivated individuals and organizations dedicated to national growth and advancement.</p>
+                        <p>Through robust outreach programs, we tackle societal challenges head-on, fostering a culture of innovation, leadership, and entrepreneurial spirit. Our personalized educational approach ensures that our students emerge as world leaders and lifelong learners.</p>
+                        <p style="margin-top: 16px; font-style: italic; color: var(--primary);">— Prof. Dharmendra Singh</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RESEARCH HIGHLIGHTS ===== -->
+        <section class="section research-section" id="research">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="reveal">Research & Innovation</h2>
+                    <p class="reveal">Pushing the boundaries of knowledge through cutting-edge research</p>
+                </div>
+                <div class="research-scroll">
+                    <div class="research-card reveal">
+                        <div class="research-card-icon">🤖</div>
+                        <h4>Artificial Intelligence</h4>
+                        <p>Machine Learning, Deep Learning, NLP, Computer Vision research with industry collaboration</p>
+                    </div>
+                    <div class="research-card reveal">
+                        <div class="research-card-icon">🔐</div>
+                        <h4>Cybersecurity</h4>
+                        <p>Network security, intrusion detection, cryptographic protocols, and blockchain research</p>
+                    </div>
+                    <div class="research-card reveal">
+                        <div class="research-card-icon">📊</div>
+                        <h4>Data Science</h4>
+                        <p>Big data analytics, statistical modeling, and data-driven decision systems</p>
+                    </div>
+                    <div class="research-card reveal">
+                        <div class="research-card-icon">📡</div>
+                        <h4>IoT & Embedded Systems</h4>
+                        <p>Smart sensors, wireless communication, and embedded system design for industry</p>
+                    </div>
+                    <div class="research-card reveal">
+                        <div class="research-card-icon">🧬</div>
+                        <h4>Computational Biology</h4>
+                        <p>Bioinformatics, genomic analysis, drug discovery through computational methods</p>
+                    </div>
+                    <div class="research-card reveal">
+                        <div class="research-card-icon">📐</div>
+                        <h4>Applied Mathematics</h4>
+                        <p>Numerical methods, optimization algorithms, and mathematical modeling for real-world problems</p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="research.html" class="btn btn-secondary reveal">Explore Research →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PLACEMENT SECTION ===== -->
+        <section class="section placement-section" id="placements">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="reveal" style="color: var(--white);">Training & Placements</h2>
+                    <p class="reveal" style="color: rgba(255,255,255,0.75);">Our graduates are recruited by the world's leading companies</p>
+                </div>
+                <div class="placement-stats">
+                    <div class="placement-stat reveal">
+                        <div class="stat-number" data-target="44" data-suffix=" LPA">0</div>
+                        <div class="stat-label">Highest Package</div>
+                    </div>
+                    <div class="placement-stat reveal">
+                        <div class="stat-number" data-target="12" data-suffix=" LPA">0</div>
+                        <div class="stat-label">Average Package</div>
+                    </div>
+                    <div class="placement-stat reveal">
+                        <div class="stat-number" data-target="95" data-suffix="%">0</div>
+                        <div class="stat-label">Students Placed</div>
+                    </div>
+                    <div class="placement-stat reveal">
+                        <div class="stat-number" data-target="120" data-suffix="+">0</div>
+                        <div class="stat-label">Recruiters</div>
+                    </div>
+                </div>
+
+                <div class="recruiter-marquee">
+                    <div class="marquee-track">
+                        <div class="recruiter-logo">Google</div>
+                        <div class="recruiter-logo">Microsoft</div>
+                        <div class="recruiter-logo">Amazon</div>
+                        <div class="recruiter-logo">Adobe</div>
+                        <div class="recruiter-logo">Flipkart</div>
+                        <div class="recruiter-logo">Infosys</div>
+                        <div class="recruiter-logo">TCS</div>
+                        <div class="recruiter-logo">Wipro</div>
+                        <div class="recruiter-logo">Goldman Sachs</div>
+                        <div class="recruiter-logo">JP Morgan</div>
+                        <div class="recruiter-logo">Deloitte</div>
+                        <div class="recruiter-logo">Oracle</div>
+                        <div class="recruiter-logo">Samsung</div>
+                        <div class="recruiter-logo">Qualcomm</div>
+                        <div class="recruiter-logo">Cisco</div>
+                        <div class="recruiter-logo">Capgemini</div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="recruiter-logo">Google</div>
+                        <div class="recruiter-logo">Microsoft</div>
+                        <div class="recruiter-logo">Amazon</div>
+                        <div class="recruiter-logo">Adobe</div>
+                        <div class="recruiter-logo">Flipkart</div>
+                        <div class="recruiter-logo">Infosys</div>
+                        <div class="recruiter-logo">TCS</div>
+                        <div class="recruiter-logo">Wipro</div>
+                        <div class="recruiter-logo">Goldman Sachs</div>
+                        <div class="recruiter-logo">JP Morgan</div>
+                        <div class="recruiter-logo">Deloitte</div>
+                        <div class="recruiter-logo">Oracle</div>
+                        <div class="recruiter-logo">Samsung</div>
+                        <div class="recruiter-logo">Qualcomm</div>
+                        <div class="recruiter-logo">Cisco</div>
+                        <div class="recruiter-logo">Capgemini</div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="placement.html" class="btn btn-secondary reveal">View Placement Report →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GALLERY SECTION ===== -->
+        <section class="section gallery-section" id="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="reveal">Campus Life</h2>
+                    <p class="reveal">Experience the vibrant culture at IIIT Vadodara</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item reveal">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80" alt="IIIT Vadodara Campus" loading="lazy">
+                        <div class="gallery-overlay"><p>Campus Building</p></div>
+                    </div>
+                    <div class="gallery-item reveal">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80" alt="Students at IIIT Vadodara" loading="lazy">
+                        <div class="gallery-overlay"><p>Student Community</p></div>
+                    </div>
+                    <div class="gallery-item reveal">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80" alt="Computer Lab" loading="lazy">
+                        <div class="gallery-overlay"><p>Computing Lab</p></div>
+                    </div>
+                    <div class="gallery-item reveal">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Convocation" loading="lazy">
+                        <div class="gallery-overlay"><p>Convocation Ceremony</p></div>
+                    </div>
+                    <div class="gallery-item reveal">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80" alt="Seminar" loading="lazy">
+                        <div class="gallery-overlay"><p>Faculty Seminar</p></div>
+                    </div>
+                    <div class="gallery-item reveal">
+                        <img src="https://images.unsplash.com/photo-1461280360983-bd93eaa5051b?w=600&q=80" alt="Sports" loading="lazy">
+                        <div class="gallery-overlay"><p>Sports Activities</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-close" aria-label="Close lightbox">✕</div>
+            <div class="lightbox-content">
+                <img src="" alt="Gallery Image">
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Institute</a></li>
+                        <li><a href="academics.html">Academic Programs</a></li>
+                        <li><a href="admission.html">Admissions</a></li>
+                        <li><a href="placement.html">Placements</a></li>
+                        <li><a href="https://iiitvadodara.ac.in/tenders.php" target="_blank" rel="noopener">Tenders</a></li>
+                        <li><a href="https://iiitvadodara.ac.in/rti.php" target="_blank" rel="noopener">RTI</a></li>
+                        <li><a href="https://iiitvadodara.ac.in/vigilance.php" target="_blank" rel="noopener">Vigilance</a></li>
+                        <li><a href="https://iiitvadodara.ac.in/faqs.php" target="_blank" rel="noopener">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Academics</h4>
+                    <ul>
+                        <li><a href="https://iiitvadodara.ac.in/academics_under_graduate.php" target="_blank" rel="noopener">B.Tech Programs</a></li>
+                        <li><a href="https://iiitvadodara.ac.in/academics_post_graduate.php" target="_blank" rel="noopener">M.Tech Programs</a></li>
+                        <li><a href="https://iiitvadodara.ac.in/mca.php" target="_blank" rel="noopener">MCA Program</a></li>
+                        <li><a href="https://iiitvadodara.ac.in/academics_phd.php" target="_blank" rel="noopener">Ph.D. Programs</a></li>
+                        <li><a href="https://iiitvadodara.ac.in/bsc.php" target="_blank" rel="noopener">B.Sc. (Online)</a></li>
+                        <li><a href="https://iiitvadodara.ac.in/hostel.php" target="_blank" rel="noopener">Hostel</a></li>
+                        <li><a href="https://iiitvadodara.ac.in/library.php" target="_blank" rel="noopener">Library</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📍</span>
+                        <span>C/O Block No. 9, Government Engineering College, Sector-28, Gandhinagar, Gujarat - 382028</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📧</span>
+                        <a href="mailto:administration@iiitvadodara.ac.in" style="color: var(--secondary);">administration@iiitvadodara.ac.in</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📞</span>
+                        <span>+91-79-29750281 / +91-8849303883</span>
+                    </div>
+                    <div class="footer-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.685!2d73.1505!3d22.3100!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf8!2sIIIT%20Vadodara!5e0!3m2!1sen!2sin!4v1" loading="lazy" title="IIIT Vadodara Location"></iframe>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook" title="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter" title="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn" title="LinkedIn">💼</a>
+                        <a href="#" aria-label="YouTube" title="YouTube">▶️</a>
+                        <a href="#" aria-label="Instagram" title="Instagram">📷</a>
+                    </div>
+                    <h4 style="margin-top: 30px;">E-Resources</h4>
+                    <ul>
+                        <li><a href="https://betamoodle.iiitvadodara.ac.in/" target="_blank" rel="noopener">Moodle LMS</a></li>
+                        <li><a href="http://nptel.iiitv.ac.in/" target="_blank" rel="noopener">NPTEL@IIITV</a></li>
+                        <li><a href="https://www.swayam.gov.in/" target="_blank" rel="noopener">SWAYAM</a></li>
+                        <li><a href="https://www.vlab.co.in/" target="_blank" rel="noopener">Virtual Labs</a></li>
+                        <li><a href="https://spoken-tutorial.org/" target="_blank" rel="noopener">Spoken Tutorial</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Indian Institute of Information Technology Vadodara — All Rights Reserved</p>
+                <p>Designed with <span class="heart">❤️</span> for IIIT Vadodara</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- Scripts -->
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/counter.js"></script>
+</body>
+</html>

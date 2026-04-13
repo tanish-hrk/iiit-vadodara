@@ -1,0 +1,289 @@
+/* ============================================
+   IIIT Vadodara — Sticky Navbar Styles
+   ============================================ */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: var(--z-sticky);
+    transition: all var(--transition-base);
+    padding: 12px 0;
+}
+
+.navbar.scrolled {
+    background: rgba(0, 26, 51, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255, 184, 0, 0.15);
+}
+
+.navbar.at-top {
+    background: rgba(0, 51, 102, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.nav-container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-xl);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* === Logo === */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.nav-logo img {
+    height: 50px;
+    width: auto;
+    transition: height var(--transition-base);
+}
+
+.navbar.scrolled .nav-logo img {
+    height: 40px;
+}
+
+.nav-logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-logo-text .eng {
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+}
+
+.nav-logo-text .hindi {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: var(--font-hindi);
+    font-size: 0.72rem;
+    line-height: 1.3;
+}
+
+/* === Navigation Menu === */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 14px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 0.85rem;
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 14px;
+    right: 14px;
+    height: 2px;
+    background: var(--secondary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-base);
+    border-radius: 1px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--white);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: scaleX(1);
+}
+
+.nav-link .arrow {
+    font-size: 0.6rem;
+    transition: transform var(--transition-fast);
+    opacity: 0.6;
+}
+
+.nav-item:hover .nav-link .arrow {
+    transform: rotate(180deg);
+}
+
+/* === Dropdown Menu === */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 240px;
+    background: rgba(0, 26, 51, 0.96);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 2px solid var(--secondary);
+    padding: 8px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all var(--transition-base);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.nav-item:hover > .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    position: relative;
+}
+
+.dropdown-link {
+    display: block;
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+    font-weight: 400;
+    transition: all var(--transition-fast);
+    border-left: 3px solid transparent;
+}
+
+.dropdown-link:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--secondary);
+    border-left-color: var(--secondary);
+    padding-left: 24px;
+}
+
+/* Sub-dropdown */
+.dropdown-item .dropdown {
+    top: 0;
+    left: 100%;
+    border-top: none;
+    border-left: 2px solid var(--secondary);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.dropdown-item:hover > .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) translateX(0);
+}
+
+.dropdown-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.06);
+    margin: 4px 0;
+}
+
+/* === Mobile Menu Toggle === */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: all var(--transition-base);
+    transform-origin: center;
+}
+
+.nav-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.nav-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* === Mobile Menu Overlay === */
+.mobile-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: var(--z-overlay);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+    backdrop-filter: blur(4px);
+}
+
+.mobile-overlay.active {
+    opacity: 1;
+}
+
+/* === Quick Links Bar === */
+.quick-links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: 6px 0;
+    justify-content: flex-end;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding-right: var(--space-xl);
+}
+
+.quick-links a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75rem;
+    transition: color var(--transition-fast);
+}
+
+.quick-links a:hover {
+    color: var(--secondary);
+}
+
+/* === Top Bar === */
+.top-bar {
+    background: var(--primary-dark);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 4px 0;
+    font-size: 0.75rem;
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .top-bar {
+        display: block;
+    }
+}
