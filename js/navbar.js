@@ -112,10 +112,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // === Search Toggle ===
+    const searchBtn = document.getElementById('searchBtn');
+    const searchBox = document.getElementById('searchBox');
+
+    if (searchBtn && searchBox) {
+        searchBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            searchBox.classList.toggle('active');
+        });
+
+        // Close search on external click
+        document.addEventListener('click', (e) => {
+            if (!searchBtn.contains(e.target) && !searchBox.contains(e.target)) {
+                searchBox.classList.remove('active');
+            }
+        });
+    }
+
     // === Close menu on Escape key ===
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             closeMenu();
+            if (searchBox) searchBox.classList.remove('active');
         }
     });
 });

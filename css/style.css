@@ -99,6 +99,58 @@
     box-sizing: border-box;
 }
 
+/* === UTILITIES & CONTAINERS === */
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-xl);
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+.glass-dark {
+    background: rgba(0, 51, 102, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section {
+    padding: var(--space-4xl) 0;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto var(--space-3xl);
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-bottom: var(--space-sm);
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--secondary);
+    border-radius: var(--radius-full);
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
@@ -680,8 +732,16 @@ p {
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--space-xl);
+}
+
+/* Enable custom spans for more dynamic layouts */
+.grid-span-2 { grid-column: span 2; }
+.grid-row-span-2 { grid-row: span 2; }
+
+@media (max-width: 1024px) {
+    .grid-span-2 { grid-column: span 1; }
 }
 
 .stat-card {
@@ -693,6 +753,7 @@ p {
     transition: all var(--transition-base);
     position: relative;
     overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .stat-card::before {
@@ -709,7 +770,8 @@ p {
 
 .stat-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-xl);
+    border-color: rgba(255, 184, 0, 0.3);
 }
 
 .stat-card:hover::before {

@@ -130,6 +130,13 @@
                 </li>
                 <li class="nav-item"><a href="jobs.html" class="nav-link">Jobs</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item nav-search">
+                    <a href="#" class="nav-link" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <div class="search-box" id="searchBox">
+                        <input type="text" placeholder="Search IIITV...">
+                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </li>
             </ul>
 
             <div class="nav-toggle" id="navToggle">
@@ -558,26 +565,35 @@
                 <h2>Campus Gallery</h2>
                 <p>A glimpse into life at IIIT Vadodara</p>
             </div>
-            <div class="gallery-grid scroll-reveal">
-                <div class="gallery-item" onclick="openLightbox(this)">
-                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80" alt="Campus Building" loading="lazy">
-                    <div class="gallery-overlay"><p><i class="fa-solid fa-expand"></i> Campus Main Building</p></div>
+            <div class="gallery-grid scroll-reveal" style="grid-template-rows: repeat(3, 240px); grid-template-columns: repeat(4, 1fr);">
+                <!-- Dynamic grid with masonry spans -->
+                <div class="gallery-item" onclick="openLightbox(this)" style="grid-column: span 2; grid-row: span 2;">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=1200&q=80" alt="Institute Main Block" loading="lazy">
+                    <div class="gallery-overlay"><p><i class="fa-solid fa-expand"></i> Main Academic Block (GEC Gandhinagar)</p></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)" style="grid-column: span 2;">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1000&q=80" alt="Coding Session" loading="lazy">
+                    <div class="gallery-overlay"><p><i class="fa-solid fa-expand"></i> Advanced Programming Lab</p></div>
                 </div>
                 <div class="gallery-item" onclick="openLightbox(this)">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c476?w=500&q=75" alt="Computer Lab" loading="lazy">
-                    <div class="gallery-overlay"><p><i class="fa-solid fa-expand"></i> Computer Labs</p></div>
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c476?w=600&q=75" alt="Campus Life" loading="lazy">
+                    <div class="gallery-overlay"><p><i class="fa-solid fa-expand"></i> Innovation & Startup Cell</p></div>
                 </div>
                 <div class="gallery-item" onclick="openLightbox(this)">
-                    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=500&q=75" alt="Students Convocation" loading="lazy">
-                    <div class="gallery-overlay"><p><i class="fa-solid fa-expand"></i> Convocation Ceremony</p></div>
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=75" alt="Convocation" loading="lazy">
+                    <div class="gallery-overlay"><p><i class="fa-solid fa-expand"></i> Annual Convocation Ceremony</p></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)" style="grid-column: span 2;">
+                    <img src="https://images.unsplash.com/photo-1498243639351-a6c9f81f4785?w=1000&q=80" alt="Library Study Area" loading="lazy">
+                    <div class="gallery-overlay"><p><i class="fa-solid fa-expand"></i> Central Library Study Hall</p></div>
                 </div>
                 <div class="gallery-item" onclick="openLightbox(this)">
-                    <img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=500&q=75" alt="Campus Library" loading="lazy">
-                    <div class="gallery-overlay"><p><i class="fa-solid fa-expand"></i> Library</p></div>
+                    <img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=600&q=75" alt="Research Lab" loading="lazy">
+                    <div class="gallery-overlay"><p><i class="fa-solid fa-expand"></i> Research Center for AI/ML</p></div>
                 </div>
                 <div class="gallery-item" onclick="openLightbox(this)">
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=75" alt="Research Lab" loading="lazy">
-                    <div class="gallery-overlay"><p><i class="fa-solid fa-expand"></i> Research Laboratories</p></div>
+                    <img src="https://images.unsplash.com/photo-1524486361537-8ad15938e1a3?w=600&q=75" alt="Event Hall" loading="lazy">
+                    <div class="gallery-overlay"><p><i class="fa-solid fa-expand"></i> Cultural Events & Festivals</p></div>
                 </div>
             </div>
         </div>
