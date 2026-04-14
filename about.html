@@ -3,29 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About — IIIT Vadodara</title>
+    <title>About IIIT Vadodara &mdash; Institute of National Importance</title>
     <meta name="description" content="Learn about IIIT Vadodara — an Institute of National Importance established under PPP model by Ministry of Education, Government of India.">
-    <meta property="og:title" content="About IIIT Vadodara">
-    <meta property="og:description" content="Indian Institute of Information Technology Vadodara — Vision, Mission, History, and Governance.">
-    <meta property="og:image" content="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png">
-    <link rel="icon" type="image/png" href="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png">
 </head>
 <body>
-    <div class="page-loader" id="page-loader"><div class="loader-content"><div class="loader-spinner"><img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="Logo" class="loader-logo"></div><p class="loader-text">Loading</p></div></div>
-    <div class="mobile-overlay" id="mobile-overlay"></div>
 
-    <nav class="navbar at-top" id="navbar" role="navigation" aria-label="Main Navigation">
+    <!-- PAGE LOADER -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-spinner">
+                <img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="IIITV Logo" class="loader-logo">
+            </div>
+            <p class="loader-text">Loading About IIITV</p>
+        </div>
+    </div>
+
+    <!-- UTILITY BAR -->
+    <div class="utility-bar">
+        <div class="inner">
+            <div class="audience-links">
+                <a href="students.html"><i class="fa-solid fa-user-graduate"></i> Students</a>
+                <a href="people.html"><i class="fa-solid fa-chalkboard-user"></i> Faculty &amp; Staff</a>
+                <a href="https://iiitvadodara.ac.in/alumni.php"><i class="fa-solid fa-people-group"></i> Alumni</a>
+                <a href="contact.html"><i class="fa-solid fa-person-walking-luggage"></i> Visitors</a>
+            </div>
+            <div class="right-links">
+                <a href="https://betamoodle.iiitvadodara.ac.in/"><i class="fa-solid fa-link"></i> iConnect</a>
+                <a href="https://mail.iiitvadodara.ac.in"><i class="fa-solid fa-envelope"></i> Webmail</a>
+                <a href="people.html"><i class="fa-solid fa-address-book"></i> Directory</a>
+                <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo"><img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="IIIT Vadodara Logo"><div class="nav-logo-text"><span class="eng">Indian Institute of Information Technology Vadodara</span><span class="hindi hindi-text">भारतीय सूचना प्रौद्योगिकी संस्‍थान वडोदरा</span></div></a>
-            <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
-                <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+            <a href="index.html" class="nav-logo">
+                <img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="IIIT Vadodara Logo">
+                <div class="nav-logo-text">
+                    <span class="eng">Indian Institute of Information Technology Vadodara</span>
+                    <span class="hindi hindi-text">भारतीय सूचना प्रौद्योगिकी संस्थान वडोदरा</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">About <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span></a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><a href="about.html" class="dropdown-link"><i class="fa-solid fa-landmark"></i> Institute</a></li>
+                        <li class="dropdown-item"><a href="about.html#vision" class="dropdown-link"><i class="fa-solid fa-bullseye"></i> Vision &amp; Mission</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/director.php" class="dropdown-link"><i class="fa-solid fa-user-tie"></i> Director</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link"><i class="fa-solid fa-sitemap"></i> Governance <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
+                            <ul class="dropdown">
+                                <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/bog.php" class="dropdown-link">Board of Governors</a></li>
+                                <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/senate.php" class="dropdown-link">Senate</a></li>
+                                <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/finance_committee.php" class="dropdown-link">Finance Committee</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Academics <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span></a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><a href="academics.html" class="dropdown-link"><i class="fa-solid fa-graduation-cap"></i> Programs</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/academics_under_graduate.php" class="dropdown-link"><i class="fa-solid fa-laptop-code"></i> B.Tech</a></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/academics_post_graduate.php" class="dropdown-link"><i class="fa-solid fa-microchip"></i> M.Tech</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li>
                 <li class="nav-item"><a href="research.html" class="nav-link">Research</a></li>
                 <li class="nav-item"><a href="people.html" class="nav-link">People</a></li>
@@ -33,25 +92,34 @@
                 <li class="nav-item"><a href="placement.html" class="nav-link">Placements</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
 
     <main>
+        <!-- PAGE HEADER -->
         <section class="page-header">
             <div class="container">
-                <h1 class="reveal">About IIIT Vadodara</h1>
-                <div class="breadcrumb reveal"><a href="index.html">Home</a> <span>/</span> <span>About</span></div>
+                <h1 class="scroll-reveal">About IIIT Vadodara</h1>
+                <div class="breadcrumb scroll-reveal"><a href="index.html">Home</a> <span>/</span> <span>About</span></div>
             </div>
         </section>
 
+        <!-- INSTITUTE OVERVIEW -->
         <section class="section" id="institute">
             <div class="container">
                 <div class="about-grid">
-                    <div class="about-image-wrapper reveal-left">
+                    <div class="about-image-wrapper scroll-reveal">
                         <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80" alt="IIIT Vadodara Campus" loading="lazy">
                     </div>
-                    <div class="about-content reveal-right">
-                        <div class="established-badge">🏛️ Established 2013</div>
+                    <div class="about-content scroll-reveal">
+                        <div class="established-badge"><i class="fa-solid fa-landmark"></i> Established 2013</div>
                         <h2>The Institute</h2>
                         <p>Indian Institute of Information Technology Vadodara (IIIT V) is established by the Ministry of Education (MoE), Government of India under Public Private Partnership (PPP) as an Institute of National Importance with a view to develop new knowledge in information technology and to provide manpower of global standards for the information technology industry.</p>
                         <p>The partners in this project are Government of India, Government of Gujarat, Gujarat Energy Research and Management Institute, Gujarat State Fertilizers and Chemicals Ltd and Tata Consultancy Services. The Institute was established in the year 2013.</p>
@@ -61,36 +129,42 @@
             </div>
         </section>
 
+        <!-- VISION & MISSION -->
         <section class="section" id="vision" style="background: var(--off-white);">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="reveal">Vision & Mission</h2>
+                <div class="section-header scroll-reveal">
+                    <h2>Vision &amp; Mission</h2>
+                    <p>Our guiding light towards excellence</p>
                 </div>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1000px; margin: 0 auto;">
-                    <div class="card reveal" style="padding: 2.5rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 1rem;">🎯 Vision</h3>
+                <div class="stats-grid" style="grid-template-columns: repeat(2, 1fr);">
+                    <div class="card scroll-reveal" style="padding: 2.5rem; text-align: left; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                        <div style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 1rem;"><i class="fa-solid fa-eye"></i></div>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Vision</h3>
                         <p>To be a globally recognized institution of excellence in Information Technology education, research, and innovation that contributes to the socio-economic development of the nation.</p>
                     </div>
-                    <div class="card reveal" style="padding: 2.5rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 1rem;">🚀 Mission</h3>
-                        <ul style="list-style: disc; padding-left: 20px; color: var(--text-body);">
-                            <li style="margin-bottom: 8px;">To produce globally competitive IT professionals and researchers</li>
-                            <li style="margin-bottom: 8px;">To foster innovation and entrepreneurship</li>
-                            <li style="margin-bottom: 8px;">To develop strong industry-academia partnerships</li>
-                            <li>To contribute to nation building through technology</li>
+                    <div class="card scroll-reveal" style="padding: 2.5rem; text-align: left; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); --delay: 0.1s">
+                        <div style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 1rem;"><i class="fa-solid fa-rocket"></i></div>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Mission</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 12px; display: flex; gap: 10px;"><i class="fa-solid fa-circle-check" style="color: var(--secondary); margin-top: 4px;"></i> <span>To produce globally competitive IT professionals and researchers</span></li>
+                            <li style="margin-bottom: 12px; display: flex; gap: 10px;"><i class="fa-solid fa-circle-check" style="color: var(--secondary); margin-top: 4px;"></i> <span>To foster innovation and entrepreneurship</span></li>
+                            <li style="margin-bottom: 12px; display: flex; gap: 10px;"><i class="fa-solid fa-circle-check" style="color: var(--secondary); margin-top: 4px;"></i> <span>To develop strong industry-academia partnerships</span></li>
+                            <li style="display: flex; gap: 10px;"><i class="fa-solid fa-circle-check" style="color: var(--secondary); margin-top: 4px;"></i> <span>To contribute to nation building through technology</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- TIMELINE -->
         <section class="section" id="timeline">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="reveal">Institute Timeline</h2>
+                <div class="section-header scroll-reveal">
+                    <h2>Institute Timeline</h2>
+                    <p>Milestones in our journey of excellence</p>
                 </div>
                 <div class="timeline">
-                    <div class="timeline-item reveal">
+                    <div class="timeline-item scroll-reveal">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="timeline-year">2013</span>
@@ -98,7 +172,7 @@
                             <p>IIIT Vadodara established by MoE under PPP model as an Institute of National Importance.</p>
                         </div>
                     </div>
-                    <div class="timeline-item reveal">
+                    <div class="timeline-item scroll-reveal" style="--delay: 0.1s">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="timeline-year">2014</span>
@@ -106,7 +180,7 @@
                             <p>First batch of BTech students began their journey at the temporary campus in GEC Gandhinagar.</p>
                         </div>
                     </div>
-                    <div class="timeline-item reveal">
+                    <div class="timeline-item scroll-reveal" style="--delay: 0.2s">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="timeline-year">2017</span>
@@ -114,7 +188,7 @@
                             <p>Parliament passed the IIIT PPP Act, granting Institute of National Importance status.</p>
                         </div>
                     </div>
-                    <div class="timeline-item reveal">
+                    <div class="timeline-item scroll-reveal" style="--delay: 0.3s">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="timeline-year">2018</span>
@@ -122,7 +196,7 @@
                             <p>First batch graduated with flying colors, marking a milestone in the institute's history.</p>
                         </div>
                     </div>
-                    <div class="timeline-item reveal">
+                    <div class="timeline-item scroll-reveal" style="--delay: 0.4s">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="timeline-year">2020</span>
@@ -130,7 +204,7 @@
                             <p>62.5 acres of land at Dumad, Vadodara allocated for the permanent campus.</p>
                         </div>
                     </div>
-                    <div class="timeline-item reveal">
+                    <div class="timeline-item scroll-reveal" style="--delay: 0.5s">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="timeline-year">2024</span>
@@ -142,28 +216,74 @@
             </div>
         </section>
 
-        <section class="section director-section" id="director">
+        <!-- DIRECTOR'S MESSAGE -->
+        <section class="section director-section" id="director" style="background: var(--off-white);">
             <div class="container">
-                <div class="section-header"><h2 class="reveal">Director's Message</h2></div>
-                <div class="director-card reveal">
+                <div class="section-header scroll-reveal">
+                    <h2>Director's Message</h2>
+                </div>
+                <div class="director-card scroll-reveal">
                     <div class="director-image">
-                        <img src="https://iiitvadodara.ac.in/assets/images/director.jpg" alt="Prof. Dharmendra Singh" loading="lazy">
-                        <div class="director-name"><h3>Prof. Dharmendra Singh</h3><p>Director</p></div>
+                        <img src="https://iiitvadodara.ac.in/assets/images/director.jpg" alt="Prof. Nikhil Kothari" loading="lazy">
+                        <div class="director-name">
+                            <h3>Prof. Nikhil Kothari</h3>
+                            <p>Director, IIIT Vadodara</p>
+                        </div>
                     </div>
                     <div class="director-message">
-                        <div class="quote-mark">"</div>
+                        <div class="quote-mark">&ldquo;</div>
                         <h3>Welcome to IIIT Vadodara</h3>
                         <p>Welcome to IIIT Vadodara, where innovation meets excellence. As an institution, academia has been a cornerstone of inspiration, driving both individual and organizational motivation. It is through quality education that we broaden our horizons for personal growth and contribute significantly to societal advancement in technical innovation and development.</p>
                         <p>At IIIT Vadodara, our vision is clear: to harness the boundless talents of our youth and propel them towards global innovation. We are committed to building a community of motivated individuals and organizations dedicated to national growth and advancement. Through robust outreach programs, we tackle societal challenges head-on, fostering a culture of innovation, leadership, and entrepreneurial spirit.</p>
-                        <p style="margin-top: 16px; font-style: italic; color: var(--primary);">— Prof. Dharmendra Singh, Director</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2026 Indian Institute of Information Technology Vadodara — All Rights Reserved</p><p>Designed with <span class="heart">❤️</span> for IIIT Vadodara</p></div></div></footer>
-    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
-    <script src="js/navbar.js"></script><script src="js/main.js"></script><script src="js/animations.js"></script><script src="js/counter.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Institute</a></li>
+                        <li><a href="academics.html"><i class="fa-solid fa-angle-right"></i> Academic Programs</a></li>
+                        <li><a href="admission.html"><i class="fa-solid fa-angle-right"></i> Admissions</a></li>
+                        <li><a href="placement.html"><i class="fa-solid fa-angle-right"></i> Placements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Gandhinagar, Gujarat - 382028</p>
+                    <p><i class="fa-solid fa-envelope"></i> administration@iiitvadodara.ac.in</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Indian Institute of Information Technology Vadodara &mdash; All Rights Reserved</p>
+                <p>Designed with <span class="heart"><i class="fa-solid fa-heart"></i></span> for IIIT Vadodara</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/counter.js"></script>
 </body>
 </html>

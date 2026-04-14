@@ -3,129 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research — IIIT Vadodara</title>
+    <title>Research & Innovation &mdash; IIIT Vadodara</title>
     <meta name="description" content="Research and publications at IIIT Vadodara — AI, Cybersecurity, Data Science, IoT, and more.">
-    <meta property="og:title" content="Research — IIIT Vadodara">
-    <meta property="og:image" content="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png">
-    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/navbar.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <div class="page-loader" id="page-loader"><div class="loader-content"><div class="loader-spinner"><img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="Logo" class="loader-logo"></div><p class="loader-text">Loading</p></div></div>
-    <div class="mobile-overlay" id="mobile-overlay"></div>
-    <nav class="navbar at-top" id="navbar" role="navigation"><div class="nav-container"><a href="index.html" class="nav-logo"><img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="Logo"><div class="nav-logo-text"><span class="eng">Indian Institute of Information Technology Vadodara</span><span class="hindi hindi-text">भारतीय सूचना प्रौद्योगिकी संस्‍थान वडोदरा</span></div></a><div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div><ul class="nav-menu" id="nav-menu"><li class="nav-item"><a href="index.html" class="nav-link">Home</a></li><li class="nav-item"><a href="about.html" class="nav-link">About</a></li><li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li><li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li><li class="nav-item"><a href="research.html" class="nav-link active">Research</a></li><li class="nav-item"><a href="people.html" class="nav-link">People</a></li><li class="nav-item"><a href="students.html" class="nav-link">Students</a></li><li class="nav-item"><a href="placement.html" class="nav-link">Placements</a></li><li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li></ul></div></nav>
+
+    <!-- PAGE LOADER -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-spinner">
+                <img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="IIITV Logo" class="loader-logo">
+            </div>
+            <p class="loader-text">Loading Research</p>
+        </div>
+    </div>
+
+    <!-- UTILITY BAR -->
+    <div class="utility-bar">
+        <div class="inner">
+            <div class="audience-links">
+                <a href="students.html"><i class="fa-solid fa-user-graduate"></i> Students</a>
+                <a href="people.html"><i class="fa-solid fa-chalkboard-user"></i> Faculty &amp; Staff</a>
+                <a href="https://iiitvadodara.ac.in/alumni.php"><i class="fa-solid fa-people-group"></i> Alumni</a>
+                <a href="contact.html"><i class="fa-solid fa-person-walking-luggage"></i> Visitors</a>
+            </div>
+            <div class="right-links">
+                <a href="https://betamoodle.iiitvadodara.ac.in/"><i class="fa-solid fa-link"></i> iConnect</a>
+                <a href="https://mail.iiitvadodara.ac.in"><i class="fa-solid fa-envelope"></i> Webmail</a>
+                <a href="people.html"><i class="fa-solid fa-address-book"></i> Directory</a>
+                <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="IIIT Vadodara Logo">
+                <div class="nav-logo-text">
+                    <span class="eng">Indian Institute of Information Technology Vadodara</span>
+                    <span class="hindi hindi-text">भारतीय सूचना प्रौद्योगिकी संस्थान वडोदरा</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span></a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><a href="about.html" class="dropdown-link"><i class="fa-solid fa-landmark"></i> Institute</a></li>
+                        <li class="dropdown-item"><a href="about.html#vision" class="dropdown-link"><i class="fa-solid fa-bullseye"></i> Vision &amp; Mission</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/director.php" class="dropdown-link"><i class="fa-solid fa-user-tie"></i> Director</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+                <li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li>
+                <li class="nav-item"><a href="research.html" class="nav-link active">Research</a></li>
+                <li class="nav-item"><a href="people.html" class="nav-link">People</a></li>
+                <li class="nav-item"><a href="students.html" class="nav-link">Students</a></li>
+                <li class="nav-item"><a href="placement.html" class="nav-link">Placements</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
 
     <main>
-        <section class="page-header"><div class="container"><h1 class="reveal">Research & Innovation</h1><div class="breadcrumb reveal"><a href="index.html">Home</a> <span>/</span> <span>Research</span></div></div></section>
+        <!-- PAGE HEADER -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="scroll-reveal">Research &amp; Innovation</h1>
+                <div class="breadcrumb scroll-reveal"><a href="index.html">Home</a> <span>/</span> <span>Research</span></div>
+            </div>
+        </section>
 
-        <!-- Research Stats -->
+        <!-- RESEARCH STATS -->
         <section class="section stats-section">
             <div class="container">
                 <div class="stats-grid">
-                    <div class="stat-card reveal">
-                        <div class="stat-icon">📄</div>
-                        <div class="stat-number" data-target="500" data-suffix="+">0</div>
+                    <div class="stat-card scroll-reveal">
+                        <div class="stat-icon"><i class="fa-solid fa-file-circle-check"></i></div>
+                        <div class="stat-number"><span class="counter" data-target="500">0</span><span>+</span></div>
                         <div class="stat-label">Publications</div>
                     </div>
-                    <div class="stat-card reveal">
-                        <div class="stat-icon">🔬</div>
-                        <div class="stat-number" data-target="25" data-suffix="+">0</div>
+                    <div class="stat-card scroll-reveal" style="--delay: 0.1s">
+                        <div class="stat-icon"><i class="fa-solid fa-flask-vial"></i></div>
+                        <div class="stat-number"><span class="counter" data-target="25">0</span><span>+</span></div>
                         <div class="stat-label">Sponsored Projects</div>
                     </div>
-                    <div class="stat-card reveal">
-                        <div class="stat-icon">🏆</div>
-                        <div class="stat-number" data-target="15" data-suffix="+">0</div>
+                    <div class="stat-card scroll-reveal" style="--delay: 0.2s">
+                        <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <div class="stat-number"><span class="counter" data-target="15">0</span><span>+</span></div>
                         <div class="stat-label">Patents Filed</div>
                     </div>
-                    <div class="stat-card reveal">
-                        <div class="stat-icon">🎓</div>
-                        <div class="stat-number" data-target="40" data-suffix="+">0</div>
+                    <div class="stat-card scroll-reveal" style="--delay: 0.3s">
+                        <div class="stat-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                        <div class="stat-number"><span class="counter" data-target="40">0</span><span>+</span></div>
                         <div class="stat-label">PhD Scholars</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Research Areas -->
+        <!-- RESEARCH AREAS -->
         <section class="section">
             <div class="container">
-                <div class="section-header"><h2 class="reveal">Research Areas</h2><p class="reveal">Cutting-edge research across multiple domains of computing and engineering</p></div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                    <div class="gradient-border-card card reveal" style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 0.5rem;">🤖 Artificial Intelligence & ML</h3>
-                        <p>Deep Learning, NLP, Computer Vision, Reinforcement Learning, Neural Architecture Search</p>
-                        <p style="font-size: 0.85rem; color: var(--medium-gray); margin-top: 8px;"><strong>Faculty:</strong> CSE & ECE Departments</p>
+                <div class="section-header scroll-reveal">
+                    <h2>Research Areas</h2>
+                    <p>Pioneering computing and engineering solutions</p>
+                </div>
+                <!-- Fix 3 column grid -->
+                <div class="stats-grid" style="grid-template-columns: repeat(3, 1fr);">
+                    <div class="card scroll-reveal" style="padding: 2.5rem; text-align: left; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                        <div style="font-size: 2rem; color: var(--secondary); margin-bottom: 1rem;"><i class="fa-solid fa-robot"></i></div>
+                        <h3 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.2rem;">Artificial Intelligence &amp; ML</h3>
+                        <p style="font-size: 0.9rem;">Deep Learning, NLP, Computer Vision, Reinforcement Learning, Neural Architecture Search</p>
+                        <p style="font-size: 0.8rem; color: var(--medium-gray); margin-top: 1rem;"><strong><i class="fa-solid fa-users-viewfinder"></i> Faculty:</strong> CSE &amp; ECE Departments</p>
                     </div>
-                    <div class="gradient-border-card card reveal" style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 0.5rem;">🔐 Cybersecurity & Privacy</h3>
-                        <p>Network Security, Intrusion Detection, Cryptographic Protocols, Blockchain, Privacy-Preserving Computing</p>
-                        <p style="font-size: 0.85rem; color: var(--medium-gray); margin-top: 8px;"><strong>Faculty:</strong> CSE Department</p>
+                    <div class="card scroll-reveal" style="padding: 2.5rem; text-align: left; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); --delay: 0.1s">
+                        <div style="font-size: 2rem; color: var(--secondary); margin-bottom: 1rem;"><i class="fa-solid fa-shield-virus"></i></div>
+                        <h3 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.2rem;">Cybersecurity &amp; Privacy</h3>
+                        <p style="font-size: 0.9rem;">Network Security, Intrusion Detection, Cryptography, Blockchain, Privacy-Preserving Computing</p>
+                        <p style="font-size: 0.8rem; color: var(--medium-gray); margin-top: 1rem;"><strong><i class="fa-solid fa-users-viewfinder"></i> Faculty:</strong> CSE Department</p>
                     </div>
-                    <div class="gradient-border-card card reveal" style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 0.5rem;">📊 Data Science & Analytics</h3>
-                        <p>Big Data, Statistical Modeling, Data Mining, Predictive Analytics, Time Series Analysis</p>
-                        <p style="font-size: 0.85rem; color: var(--medium-gray); margin-top: 8px;"><strong>Faculty:</strong> CSE & Mathematics Departments</p>
+                    <div class="card scroll-reveal" style="padding: 2.5rem; text-align: left; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); --delay: 0.2s">
+                        <div style="font-size: 2rem; color: var(--secondary); margin-bottom: 1rem;"><i class="fa-solid fa-database"></i></div>
+                        <h3 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.2rem;">Data Science &amp; Analytics</h3>
+                        <p style="font-size: 0.9rem;">Big Data, Statistical Modeling, Data Mining, Predictive Analytics, Time Series Analysis</p>
+                        <p style="font-size: 0.8rem; color: var(--medium-gray); margin-top: 1rem;"><strong><i class="fa-solid fa-users-viewfinder"></i> Faculty:</strong> CSE &amp; Math</p>
                     </div>
-                    <div class="gradient-border-card card reveal" style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 0.5rem;">📡 IoT & Embedded Systems</h3>
-                        <p>Smart Sensors, Wireless Communication, Edge Computing, FPGA Design, Wearable Devices</p>
-                        <p style="font-size: 0.85rem; color: var(--medium-gray); margin-top: 8px;"><strong>Faculty:</strong> ECE Department</p>
-                    </div>
-                    <div class="gradient-border-card card reveal" style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 0.5rem;">🧬 Computational Biology</h3>
-                        <p>Bioinformatics, Genomic Analysis, Drug Discovery, Protein Structure Prediction</p>
-                        <p style="font-size: 0.85rem; color: var(--medium-gray); margin-top: 8px;"><strong>Faculty:</strong> CSE & Science Departments</p>
-                    </div>
-                    <div class="gradient-border-card card reveal" style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 0.5rem;">📐 Applied Mathematics</h3>
-                        <p>Numerical Methods, Optimization, Mathematical Modeling, Differential Equations, Graph Theory</p>
-                        <p style="font-size: 0.85rem; color: var(--medium-gray); margin-top: 8px;"><strong>Faculty:</strong> Mathematics Department</p>
-                    </div>
-                    <div class="gradient-border-card card reveal" style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 0.5rem;">🌊 Signal & Image Processing</h3>
-                        <p>Medical Imaging, Remote Sensing, Audio Processing, Pattern Recognition</p>
-                        <p style="font-size: 0.85rem; color: var(--medium-gray); margin-top: 8px;"><strong>Faculty:</strong> ECE Department</p>
-                    </div>
-                    <div class="gradient-border-card card reveal" style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 0.5rem;">🔋 Microwave & Materials</h3>
-                        <p>Radar Absorbing Materials, Electromagnetic Shielding, Antenna Design, Metamaterials</p>
-                        <p style="font-size: 0.85rem; color: var(--medium-gray); margin-top: 8px;"><strong>Faculty:</strong> Physics Department</p>
+                    <div class="card scroll-reveal" style="padding: 2.5rem; text-align: left; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); --delay: 0.3s">
+                        <div style="font-size: 2rem; color: var(--secondary); margin-bottom: 1rem;"><i class="fa-solid fa-satellite-dish"></i></div>
+                        <h3 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.2rem;">IoT &amp; Embedded Systems</h3>
+                        <p style="font-size: 0.9rem;">Smart Sensors, Wireless Comm, Edge Computing, FPGA Design, Wearable Devices</p>
+                        <p style="font-size: 0.8rem; color: var(--medium-gray); margin-top: 1rem;"><strong><i class="fa-solid fa-users-viewfinder"></i> Faculty:</strong> ECE Department</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sponsored Projects -->
+        <!-- SPONSORED PROJECTS -->
         <section class="section" style="background: var(--off-white);">
             <div class="container">
-                <div class="section-header"><h2 class="reveal">Sponsored Research</h2><p class="reveal">Funded by leading agencies and organizations</p></div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-                    <div class="card reveal" style="padding: 2rem;">
-                        <h4 style="color: var(--primary); margin-bottom: 8px;">Multisensor Data for Crop Stress Management</h4>
-                        <p style="font-size: 0.85rem; color: var(--dark-gray);">Development of Multisensor Data based Automated Crop Stress Management and Soil Map Monitoring System</p>
-                        <span class="program-duration" style="margin-top: 12px;">Active</span>
+                <div class="section-header scroll-reveal">
+                    <h2>Sponsored Research</h2>
+                    <p>Funded by leading agencies and organizations</p>
+                </div>
+                <div class="stats-grid" style="grid-template-columns: repeat(2, 1fr);">
+                    <div class="card scroll-reveal" style="padding: 2.5rem; text-align: left; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                        <h4 style="color: var(--primary); margin-bottom: 12px; font-size: 1.1rem; border-left: 4px solid var(--secondary); padding-left: 15px;">Automated Crop Stress Management</h4>
+                        <p style="font-size: 0.9rem; color: var(--dark-gray);">Development of Multisensor Data based Automated Crop Stress Management and Soil Map Monitoring System</p>
+                        <div style="margin-top: 1.5rem;"><span class="hero-badge" style="background: var(--primary); color: var(--white); font-size: 0.75rem;">Ongoing</span></div>
                     </div>
-                    <div class="card reveal" style="padding: 2rem;">
-                        <h4 style="color: var(--primary); margin-bottom: 8px;">QIP PG Certificate in AI</h4>
-                        <p style="font-size: 0.85rem; color: var(--dark-gray);">Quality Improvement Programme Postgraduate Certificate in Artificial Intelligence (AICTE sponsored)</p>
-                        <span class="program-duration" style="margin-top: 12px;">Active</span>
-                    </div>
-                    <div class="card reveal" style="padding: 2rem;">
-                        <h4 style="color: var(--primary); margin-bottom: 8px;">QIP PG Certificate in Cybersecurity</h4>
-                        <p style="font-size: 0.85rem; color: var(--dark-gray);">Quality Improvement Programme Postgraduate Certificate in Cybersecurity (AICTE sponsored)</p>
-                        <span class="program-duration" style="margin-top: 12px;">Active</span>
+                    <div class="card scroll-reveal" style="padding: 2.5rem; text-align: left; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); --delay: 0.1s">
+                        <h4 style="color: var(--primary); margin-bottom: 12px; font-size: 1.1rem; border-left: 4px solid var(--secondary); padding-left: 15px;">QIP Certification Programs</h4>
+                        <p style="font-size: 0.9rem; color: var(--dark-gray);">AICTE sponsored PG Certificates in Artificial Intelligence and Cybersecurity for capacity building.</p>
+                        <div style="margin-top: 1.5rem;"><span class="hero-badge" style="background: var(--primary); color: var(--white); font-size: 0.75rem;">Active Engagement</span></div>
                     </div>
                 </div>
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="https://iiitvadodara.ac.in/sponsored_projects.php" class="btn btn-outline reveal" target="_blank" rel="noopener">View All Projects →</a>
-                    <a href="https://iiitvadodara.ac.in/publications.php" class="btn btn-primary reveal" style="margin-left: 12px;" target="_blank" rel="noopener">View Publications →</a>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="https://iiitvadodara.ac.in/sponsored_projects.php" class="btn btn-primary" target="_blank" rel="noopener"><i class="fa-solid fa-magnifying-glass-plus"></i> Explore All Projects</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2026 IIIT Vadodara — All Rights Reserved</p><p>Designed with <span class="heart">❤️</span> for IIIT Vadodara</p></div></div></footer>
-    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
-    <script src="js/navbar.js"></script><script src="js/main.js"></script><script src="js/animations.js"></script><script src="js/counter.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Institute</a></li>
+                        <li><a href="academics.html"><i class="fa-solid fa-angle-right"></i> Academics</a></li>
+                        <li><a href="research.html"><i class="fa-solid fa-angle-right"></i> Research</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://iiitvadodara.ac.in/publications.php"><i class="fa-solid fa-angle-right"></i> Publications</a></li>
+                        <li><a href="https://iiitvadodara.ac.in/sponsored_projects.php"><i class="fa-solid fa-angle-right"></i> Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Indian Institute of Information Technology Vadodara &mdash; All Rights Reserved</p>
+                <p>Designed with <span class="heart"><i class="fa-solid fa-heart"></i></span> for IIIT Vadodara</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/counter.js"></script>
 </body>
 </html>

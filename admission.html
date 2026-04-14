@@ -3,70 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admissions — IIIT Vadodara</title>
+    <title>Admissions &mdash; IIIT Vadodara</title>
     <meta name="description" content="Admission process for IIIT Vadodara — BTech via JoSSA/CSAB, MTech via GATE, MCA, PhD admissions.">
-    <meta property="og:title" content="Admissions — IIIT Vadodara">
-    <meta property="og:image" content="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png">
-    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/navbar.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <div class="page-loader" id="page-loader"><div class="loader-content"><div class="loader-spinner"><img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="Logo" class="loader-logo"></div><p class="loader-text">Loading</p></div></div>
-    <div class="mobile-overlay" id="mobile-overlay"></div>
-    <nav class="navbar at-top" id="navbar" role="navigation"><div class="nav-container"><a href="index.html" class="nav-logo"><img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="Logo"><div class="nav-logo-text"><span class="eng">Indian Institute of Information Technology Vadodara</span><span class="hindi hindi-text">भारतीय सूचना प्रौद्योगिकी संस्‍थान वडोदरा</span></div></a><div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div><ul class="nav-menu" id="nav-menu"><li class="nav-item"><a href="index.html" class="nav-link">Home</a></li><li class="nav-item"><a href="about.html" class="nav-link">About</a></li><li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li><li class="nav-item"><a href="admission.html" class="nav-link active">Admission</a></li><li class="nav-item"><a href="research.html" class="nav-link">Research</a></li><li class="nav-item"><a href="people.html" class="nav-link">People</a></li><li class="nav-item"><a href="students.html" class="nav-link">Students</a></li><li class="nav-item"><a href="placement.html" class="nav-link">Placements</a></li><li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li></ul></div></nav>
+
+    <!-- PAGE LOADER -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-spinner">
+                <img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="IIITV Logo" class="loader-logo">
+            </div>
+            <p class="loader-text">Loading Admissions</p>
+        </div>
+    </div>
+
+    <!-- UTILITY BAR -->
+    <div class="utility-bar">
+        <div class="inner">
+            <div class="audience-links">
+                <a href="students.html"><i class="fa-solid fa-user-graduate"></i> Students</a>
+                <a href="people.html"><i class="fa-solid fa-chalkboard-user"></i> Faculty &amp; Staff</a>
+                <a href="https://iiitvadodara.ac.in/alumni.php"><i class="fa-solid fa-people-group"></i> Alumni</a>
+                <a href="contact.html"><i class="fa-solid fa-person-walking-luggage"></i> Visitors</a>
+            </div>
+            <div class="right-links">
+                <a href="https://betamoodle.iiitvadodara.ac.in/"><i class="fa-solid fa-link"></i> iConnect</a>
+                <a href="https://mail.iiitvadodara.ac.in"><i class="fa-solid fa-envelope"></i> Webmail</a>
+                <a href="people.html"><i class="fa-solid fa-address-book"></i> Directory</a>
+                <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="IIIT Vadodara Logo">
+                <div class="nav-logo-text">
+                    <span class="eng">Indian Institute of Information Technology Vadodara</span>
+                    <span class="hindi hindi-text">भारतीय सूचना प्रौद्योगिकी संस्थान वडोदरा</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span></a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><a href="about.html" class="dropdown-link"><i class="fa-solid fa-landmark"></i> Institute</a></li>
+                        <li class="dropdown-item"><a href="about.html#vision" class="dropdown-link"><i class="fa-solid fa-bullseye"></i> Vision &amp; Mission</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/director.php" class="dropdown-link"><i class="fa-solid fa-user-tie"></i> Director</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+                <li class="nav-item"><a href="admission.html" class="nav-link active">Admission</a></li>
+                <li class="nav-item"><a href="research.html" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="people.html" class="nav-link">People</a></li>
+                <li class="nav-item"><a href="students.html" class="nav-link">Students</a></li>
+                <li class="nav-item"><a href="placement.html" class="nav-link">Placements</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
 
     <main>
-        <section class="page-header"><div class="container"><h1 class="reveal">Admissions</h1><div class="breadcrumb reveal"><a href="index.html">Home</a> <span>/</span> <span>Admissions</span></div></div></section>
+        <!-- PAGE HEADER -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="scroll-reveal">Admissions</h1>
+                <div class="breadcrumb scroll-reveal"><a href="index.html">Home</a> <span>/</span> <span>Admissions</span></div>
+            </div>
+        </section>
 
+        <!-- ADMISSION PROCESS -->
         <section class="section">
             <div class="container">
-                <div class="section-header"><h2 class="reveal">Admission Process</h2><p class="reveal">Your step-by-step guide to joining IIIT Vadodara</p></div>
+                <div class="section-header scroll-reveal">
+                    <h2>Admission Process</h2>
+                    <p>Your step-by-step guide to joining IIIT Vadodara</p>
+                </div>
                 <div class="steps-container">
-                    <div class="step-card reveal"><div class="step-number">1</div><h4>Entrance Exam</h4><p>Qualify JEE Main (BTech), GATE (MTech), NIMCET (MCA), or Institute Entrance (PhD)</p></div>
-                    <div class="step-card reveal"><div class="step-number">2</div><h4>Counselling</h4><p>Participate in JoSSA/CSAB counselling for BTech or direct admission for other programs</p></div>
-                    <div class="step-card reveal"><div class="step-number">3</div><h4>Seat Allotment</h4><p>Accept the seat allotment and pay the required admission fee</p></div>
-                    <div class="step-card reveal"><div class="step-number">4</div><h4>Document Verification</h4><p>Complete document verification and submit originals at the institute</p></div>
-                    <div class="step-card reveal"><div class="step-number">5</div><h4>Enrollment</h4><p>Complete enrollment formalities and begin your academic journey at IIIT Vadodara</p></div>
+                    <div class="step-card scroll-reveal">
+                        <div class="step-number">1</div>
+                        <h4><i class="fa-solid fa-pen-clip"></i> Entrance Exam</h4>
+                        <p>Qualify JEE Main (BTech), GATE (MTech), NIMCET (MCA), or Institute Entrance (PhD)</p>
+                    </div>
+                    <div class="step-card scroll-reveal" style="--delay: 0.1s">
+                        <div class="step-number">2</div>
+                        <h4><i class="fa-solid fa-comments"></i> Counselling</h4>
+                        <p>Participate in JoSSA/CSAB counselling for BTech or direct admission for other programs</p>
+                    </div>
+                    <div class="step-card scroll-reveal" style="--delay: 0.2s">
+                        <div class="step-number">3</div>
+                        <h4><i class="fa-solid fa-check-to-slot"></i> Seat Allotment</h4>
+                        <p>Accept the seat allotment and pay the required admission fee</p>
+                    </div>
+                    <div class="step-card scroll-reveal" style="--delay: 0.3s">
+                        <div class="step-number">4</div>
+                        <h4><i class="fa-solid fa-file-shield"></i> Documentation</h4>
+                        <p>Complete document verification and submit originals at the institute</p>
+                    </div>
+                    <div class="step-card scroll-reveal" style="--delay: 0.4s">
+                        <div class="step-number">5</div>
+                        <h4><i class="fa-solid fa-user-check"></i> Enrollment</h4>
+                        <p>Complete enrollment formalities and begin your academic journey at IIIT Vadodara</p>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- PROGRAM WISE ADMISSION -->
         <section class="section" style="background: var(--off-white);">
             <div class="container">
-                <div class="section-header"><h2 class="reveal">Program-wise Admission</h2></div>
-                <div class="table-wrapper">
-                    <table class="styled-table reveal">
+                <div class="section-header scroll-reveal">
+                    <h2>Program-wise Admission</h2>
+                </div>
+                <div class="table-wrapper scroll-reveal">
+                    <table class="styled-table">
                         <thead>
-                            <tr><th>Program</th><th>Entrance Exam</th><th>Counselling</th><th>Duration</th><th>Apply</th></tr>
+                            <tr>
+                                <th>Program</th>
+                                <th>Entrance Exam</th>
+                                <th>Counselling</th>
+                                <th>Duration</th>
+                                <th>Action</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td><strong>B.Tech (CSE/ECE)</strong></td><td>JEE Main</td><td>JoSSA / CSAB</td><td>4 Years</td><td><a href="https://iiitvadodara.ac.in/admission_btech.php" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" target="_blank" rel="noopener">Apply →</a></td></tr>
-                            <tr><td><strong>B.Tech (DASA)</strong></td><td>SAT/ACT</td><td>DASA Portal</td><td>4 Years</td><td><a href="https://iiitvadodara.ac.in/btechdasa.php" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" target="_blank" rel="noopener">Apply →</a></td></tr>
-                            <tr><td><strong>M.Tech (CSE)</strong></td><td>GATE</td><td>CCMT / Direct</td><td>2 Years</td><td><a href="https://iiitvadodara.ac.in/mtech_admissions.php" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" target="_blank" rel="noopener">Apply →</a></td></tr>
-                            <tr><td><strong>MCA</strong></td><td>NIMCET</td><td>Direct Admission</td><td>2 Years</td><td><a href="https://iiitvadodara.ac.in/mca_admissions.php" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" target="_blank" rel="noopener">Apply →</a></td></tr>
-                            <tr><td><strong>Ph.D.</strong></td><td>NET/GATE</td><td>Institute Level</td><td>3-5 Years</td><td><a href="https://iiitvadodara.ac.in/phd_admissions.php" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" target="_blank" rel="noopener">Apply →</a></td></tr>
-                            <tr><td><strong>B.Sc. (Online)</strong></td><td>Institute Level</td><td>Online Portal</td><td>3 Years</td><td><a href="https://iiitvadodara.ac.in/bsc_admissions.php" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" target="_blank" rel="noopener">Apply →</a></td></tr>
+                            <tr>
+                                <td><strong>B.Tech (CSE/ECE)</strong></td>
+                                <td>JEE Main</td>
+                                <td>JoSSA / CSAB</td>
+                                <td>4 Years</td>
+                                <td><a href="https://iiitvadodara.ac.in/admission_btech.php" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" target="_blank" rel="noopener"><i class="fa-solid fa-paper-plane"></i> Apply</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>B.Tech (DASA)</strong></td>
+                                <td>SAT/ACT</td>
+                                <td>DASA Portal</td>
+                                <td>4 Years</td>
+                                <td><a href="https://iiitvadodara.ac.in/btechdasa.php" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" target="_blank" rel="noopener"><i class="fa-solid fa-paper-plane"></i> Apply</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>M.Tech (CSE)</strong></td>
+                                <td>GATE</td>
+                                <td>CCMT / Direct</td>
+                                <td>2 Years</td>
+                                <td><a href="https://iiitvadodara.ac.in/mtech_admissions.php" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" target="_blank" rel="noopener"><i class="fa-solid fa-paper-plane"></i> Apply</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>MCA</strong></td>
+                                <td>NIMCET</td>
+                                <td>Direct Admission</td>
+                                <td>2 Years</td>
+                                <td><a href="https://iiitvadodara.ac.in/mca_admissions.php" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" target="_blank" rel="noopener"><i class="fa-solid fa-paper-plane"></i> Apply</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ph.D.</strong></td>
+                                <td>NET/GATE</td>
+                                <td>Institute Level</td>
+                                <td>3-5 Years</td>
+                                <td><a href="https://iiitvadodara.ac.in/phd_admissions.php" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" target="_blank" rel="noopener"><i class="fa-solid fa-paper-plane"></i> Apply</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>B.Sc. (Online)</strong></td>
+                                <td>Institute Level</td>
+                                <td>Online Portal</td>
+                                <td>3 Years</td>
+                                <td><a href="https://iiitvadodara.ac.in/bsc_admissions.php" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" target="_blank" rel="noopener"><i class="fa-solid fa-paper-plane"></i> Apply</a></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </section>
 
+        <!-- IMPORTANT LINKS -->
         <section class="section">
             <div class="container">
-                <div class="section-header"><h2 class="reveal">Important Links</h2></div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                    <a href="https://josaa.admissions.nic.in/" class="card reveal" style="padding: 2rem; text-align: center; text-decoration: none;" target="_blank" rel="noopener"><h4 style="color: var(--primary); margin-bottom: 8px;">JoSSA Portal</h4><p>Joint Seat Allocation Authority</p></a>
-                    <a href="https://csab.nic.in/" class="card reveal" style="padding: 2rem; text-align: center;" target="_blank" rel="noopener"><h4 style="color: var(--primary); margin-bottom: 8px;">CSAB Portal</h4><p>Central Seat Allocation Board</p></a>
-                    <a href="https://www.dasanit.org/" class="card reveal" style="padding: 2rem; text-align: center;" target="_blank" rel="noopener"><h4 style="color: var(--primary); margin-bottom: 8px;">DASA Portal</h4><p>Direct Admission of Students Abroad</p></a>
-                    <a href="https://iiitvadodara.ac.in/sii.php" class="card reveal" style="padding: 2rem; text-align: center;" target="_blank" rel="noopener"><h4 style="color: var(--primary); margin-bottom: 8px;">Study in India</h4><p>For international students</p></a>
+                <div class="section-header scroll-reveal">
+                    <h2>Important Portals</h2>
+                </div>
+                <div class="stats-grid">
+                    <a href="https://josaa.admissions.nic.in/" class="card scroll-reveal" style="padding: 2.5rem; text-align: center; text-decoration: none;" target="_blank" rel="noopener">
+                        <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h4 style="color: var(--primary); margin-bottom: 8px;">JoSSA Portal</h4>
+                        <p>Joint Seat Allocation Authority</p>
+                    </a>
+                    <a href="https://csab.nic.in/" class="card scroll-reveal" style="padding: 2.5rem; text-align: center; text-decoration: none; --delay: 0.1s" target="_blank" rel="noopener">
+                        <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"><i class="fa-solid fa-building-columns"></i></div>
+                        <h4 style="color: var(--primary); margin-bottom: 8px;">CSAB Portal</h4>
+                        <p>Central Seat Allocation Board</p>
+                    </a>
+                    <a href="https://www.dasanit.org/" class="card scroll-reveal" style="padding: 2.5rem; text-align: center; text-decoration: none; --delay: 0.2s" target="_blank" rel="noopener">
+                        <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"><i class="fa-solid fa-earth-americas"></i></div>
+                        <h4 style="color: var(--primary); margin-bottom: 8px;">DASA Portal</h4>
+                        <p>Admission of Students Abroad</p>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2026 IIIT Vadodara — All Rights Reserved</p><p>Designed with <span class="heart">❤️</span> for IIIT Vadodara</p></div></div></footer>
-    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
-    <script src="js/navbar.js"></script><script src="js/main.js"></script><script src="js/animations.js"></script><script src="js/counter.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Institute</a></li>
+                        <li><a href="academics.html"><i class="fa-solid fa-angle-right"></i> Academic Programs</a></li>
+                        <li><a href="admission.html"><i class="fa-solid fa-angle-right"></i> Admissions</a></li>
+                        <li><a href="placement.html"><i class="fa-solid fa-angle-right"></i> Placements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Gandhinagar, Gujarat - 382028</p>
+                    <p><i class="fa-solid fa-envelope"></i> administration@iiitvadodara.ac.in</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Indian Institute of Information Technology Vadodara &mdash; All Rights Reserved</p>
+                <p>Designed with <span class="heart"><i class="fa-solid fa-heart"></i></span> for IIIT Vadodara</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/counter.js"></script>
 </body>
 </html>

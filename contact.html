@@ -3,106 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact — IIIT Vadodara</title>
+    <title>Contact Us &mdash; IIIT Vadodara</title>
     <meta name="description" content="Contact IIIT Vadodara — Address, phone, email, and enquiry form for admissions, academics, and administration.">
-    <meta property="og:title" content="Contact — IIIT Vadodara">
-    <meta property="og:image" content="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png">
-    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/navbar.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <div class="page-loader" id="page-loader"><div class="loader-content"><div class="loader-spinner"><img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="Logo" class="loader-logo"></div><p class="loader-text">Loading</p></div></div>
-    <div class="mobile-overlay" id="mobile-overlay"></div>
-    <nav class="navbar at-top" id="navbar" role="navigation"><div class="nav-container"><a href="index.html" class="nav-logo"><img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="Logo"><div class="nav-logo-text"><span class="eng">Indian Institute of Information Technology Vadodara</span><span class="hindi hindi-text">भारतीय सूचना प्रौद्योगिकी संस्‍थान वडोदरा</span></div></a><div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div><ul class="nav-menu" id="nav-menu"><li class="nav-item"><a href="index.html" class="nav-link">Home</a></li><li class="nav-item"><a href="about.html" class="nav-link">About</a></li><li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li><li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li><li class="nav-item"><a href="research.html" class="nav-link">Research</a></li><li class="nav-item"><a href="people.html" class="nav-link">People</a></li><li class="nav-item"><a href="students.html" class="nav-link">Students</a></li><li class="nav-item"><a href="placement.html" class="nav-link">Placements</a></li><li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li></ul></div></nav>
+
+    <!-- PAGE LOADER -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-spinner">
+                <img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="IIITV Logo" class="loader-logo">
+            </div>
+            <p class="loader-text">Loading Contact</p>
+        </div>
+    </div>
+
+    <!-- UTILITY BAR -->
+    <div class="utility-bar">
+        <div class="inner">
+            <div class="audience-links">
+                <a href="students.html"><i class="fa-solid fa-user-graduate"></i> Students</a>
+                <a href="people.html"><i class="fa-solid fa-chalkboard-user"></i> Faculty &amp; Staff</a>
+                <a href="https://iiitvadodara.ac.in/alumni.php"><i class="fa-solid fa-people-group"></i> Alumni</a>
+                <a href="contact.html"><i class="fa-solid fa-person-walking-luggage"></i> Visitors</a>
+            </div>
+            <div class="right-links">
+                <a href="https://betamoodle.iiitvadodara.ac.in/"><i class="fa-solid fa-link"></i> iConnect</a>
+                <a href="https://mail.iiitvadodara.ac.in"><i class="fa-solid fa-envelope"></i> Webmail</a>
+                <a href="people.html"><i class="fa-solid fa-address-book"></i> Directory</a>
+                <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="IIIT Vadodara Logo">
+                <div class="nav-logo-text">
+                    <span class="eng">Indian Institute of Information Technology Vadodara</span>
+                    <span class="hindi hindi-text">भारतीय सूचना प्रौद्योगिकी संस्थान वडोदरा</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span></a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><a href="about.html" class="dropdown-link"><i class="fa-solid fa-landmark"></i> Institute</a></li>
+                        <li class="dropdown-item"><a href="about.html#vision" class="dropdown-link"><i class="fa-solid fa-bullseye"></i> Vision &amp; Mission</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/director.php" class="dropdown-link"><i class="fa-solid fa-user-tie"></i> Director</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+                <li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li>
+                <li class="nav-item"><a href="research.html" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="people.html" class="nav-link">People</a></li>
+                <li class="nav-item"><a href="students.html" class="nav-link">Students</a></li>
+                <li class="nav-item"><a href="placement.html" class="nav-link">Placements</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
 
     <main>
-        <section class="page-header"><div class="container"><h1 class="reveal">Contact Us</h1><div class="breadcrumb reveal"><a href="index.html">Home</a> <span>/</span> <span>Contact</span></div></div></section>
+        <!-- PAGE HEADER -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="scroll-reveal">Contact Us</h1>
+                <div class="breadcrumb scroll-reveal"><a href="index.html">Home</a> <span>/</span> <span>Contact</span></div>
+            </div>
+        </section>
 
+        <!-- CONTACT INTERFACE -->
         <section class="section">
             <div class="container">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
-                    <!-- Contact Form -->
-                    <div class="reveal-left">
-                        <h2 style="color: var(--primary); margin-bottom: 1.5rem;">Send us a Message</h2>
-                        <form class="contact-form" id="contact-form" style="max-width: 100%;">
-                            <div class="form-group">
-                                <label for="name">Full Name *</label>
-                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                                <p class="form-error">Please enter your name</p>
+                <div class="stats-grid" style="grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: start;">
+                    
+                    <!-- Form Side -->
+                    <div class="scroll-reveal">
+                        <h2 style="color: var(--primary); margin-bottom: 2rem; position: relative; padding-bottom: 10px;">
+                            Send us a Message
+                            <span style="position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background: var(--secondary);"></span>
+                        </h2>
+                        <form class="contact-form" id="contactForm" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div>
+                                    <label for="name" style="display: block; margin-bottom: 8px; font-weight: 500;">Full Name *</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required style="width: 100%; padding: 12px; border: 1px solid var(--light-grey); border-radius: 6px;">
+                                </div>
+                                <div>
+                                    <label for="email" style="display: block; margin-bottom: 8px; font-weight: 500;">Email Address *</label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required style="width: 100%; padding: 12px; border: 1px solid var(--light-grey); border-radius: 6px;">
+                                </div>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                                <p class="form-error">Please enter a valid email</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <select id="subject" name="subject">
-                                    <option value="">Select a subject</option>
-                                    <option value="admissions">Admissions Enquiry</option>
-                                    <option value="academics">Academic Query</option>
-                                    <option value="placements">Placement Query</option>
-                                    <option value="research">Research Collaboration</option>
-                                    <option value="general">General Enquiry</option>
-                                    <option value="feedback">Feedback</option>
+                                <label for="subject" style="display: block; margin-bottom: 8px; font-weight: 500;">Inquiry Type</label>
+                                <select id="subject" name="subject" style="width: 100%; padding: 12px; border: 1px solid var(--light-grey); border-radius: 6px; background: white;">
+                                    <option value="general">General Inquiry</option>
+                                    <option value="admissions">Admission Query</option>
+                                    <option value="academics">Academic Assistance</option>
+                                    <option value="placement">Placement &amp; Industry</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="message">Message *</label>
-                                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
-                                <p class="form-error">Please enter your message</p>
+                                <label for="message" style="display: block; margin-bottom: 8px; font-weight: 500;">Your Message *</label>
+                                <textarea id="message" name="message" placeholder="How can we help you?" required style="width: 100%; padding: 12px; border: 1px solid var(--light-grey); border-radius: 6px; min-height: 150px;"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message →</button>
+                            <button type="submit" class="btn btn-primary" style="align-self: flex-start; padding: 12px 30px;"><i class="fa-solid fa-paper-plane"></i> Send Inquiry</button>
                         </form>
                     </div>
 
-                    <!-- Contact Info -->
-                    <div class="reveal-right">
-                        <h2 style="color: var(--primary); margin-bottom: 1.5rem;">Get in Touch</h2>
-
-                        <div class="card" style="padding: 2rem; margin-bottom: 1.5rem;">
-                            <h4 style="color: var(--primary); margin-bottom: 1rem;">📍 Address</h4>
-                            <p><strong>Indian Institute of Information Technology Vadodara</strong></p>
-                            <p>C/O Block No. 9, Government Engineering College<br>Sector-28, Gandhinagar<br>Gujarat - 382028, India</p>
+                    <!-- Info Side -->
+                    <div class="scroll-reveal" style="--delay: 0.1s">
+                        <div class="card" style="padding: 2rem; background: var(--off-white); border-radius: var(--radius-lg); margin-bottom: 2rem;">
+                            <h3 style="color: var(--primary); margin-bottom: 1.5rem;"><i class="fa-solid fa-location-dot" style="color: var(--secondary);"></i> Institutional Address</h3>
+                            <p style="font-weight: 600; font-size: 1.1rem; color: var(--primary); margin-bottom: 0.5rem;">Indian Institute of Information Technology Vadodara</p>
+                            <p style="line-height: 1.6; color: var(--text-body);">
+                                C/O Block No. 9, Government Engineering College,<br>
+                                Sector-28, Gandhinagar,<br>
+                                Gujarat - 382028, India
+                            </p>
                         </div>
 
-                        <div class="card" style="padding: 2rem; margin-bottom: 1.5rem;">
-                            <h4 style="color: var(--primary); margin-bottom: 1rem;">📞 Contact Details</h4>
-                            <p><strong>Phone:</strong> +91-79-29750281</p>
-                            <p><strong>Alternate:</strong> +91-8849303883</p>
-                            <p><strong>Email:</strong> <a href="mailto:administration@iiitvadodara.ac.in" style="color: var(--primary-light);">administration@iiitvadodara.ac.in</a></p>
+                        <div class="card" style="padding: 2rem; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                            <h3 style="color: var(--primary); margin-bottom: 1.5rem;"><i class="fa-solid fa-headset" style="color: var(--secondary);"></i> Contact Channels</h3>
+                            <div style="display: flex; flex-direction: column; gap: 15px;">
+                                <div style="display: flex; gap: 15px; align-items: flex-start;">
+                                    <div style="color: var(--secondary); font-size: 1.2rem;"><i class="fa-solid fa-phone-volume"></i></div>
+                                    <div>
+                                        <p style="font-weight: 600; margin-bottom: 2px;">Admissions &amp; General</p>
+                                        <p style="font-size: 0.95rem;">+91-79-29750281</p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; gap: 15px; align-items: flex-start;">
+                                    <div style="color: var(--secondary); font-size: 1.2rem;"><i class="fa-solid fa-envelope-open-text"></i></div>
+                                    <div>
+                                        <p style="font-weight: 600; margin-bottom: 2px;">Email Support</p>
+                                        <p style="font-size: 0.95rem;"><a href="mailto:administration@iiitvadodara.ac.in" style="color: var(--primary);">administration@iiitvadodara.ac.in</a></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- Department Contacts -->
-                        <div class="table-wrapper">
-                            <table class="styled-table" style="font-size: 0.85rem;">
-                                <thead><tr><th>Department</th><th>Contact</th></tr></thead>
-                                <tbody>
-                                    <tr><td>Director's Office</td><td>director@iiitvadodara.ac.in</td></tr>
-                                    <tr><td>Administration</td><td>administration@iiitvadodara.ac.in</td></tr>
-                                    <tr><td>Admissions</td><td>admissions@iiitvadodara.ac.in</td></tr>
-                                    <tr><td>Placements</td><td>placement@iiitvadodara.ac.in</td></tr>
-                                    <tr><td>Academic Section</td><td>academics@iiitvadodara.ac.in</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <!-- Google Maps -->
-                        <div style="margin-top: 1.5rem; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0!2d72.6283!3d23.2156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2b98deaf7a85%3A0x5c0!2sGovernment%20Engineering%20College%20Gandhinagar!5e0!3m2!1sen!2sin!4v1" width="100%" height="300" style="border:0;" loading="lazy" title="IIIT Vadodara Location Map" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- Map -->
+                        <div style="margin-top: 2rem; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0!2d72.6283!3d23.2156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2b98deaf7a85%3A0x5c0!2sGovernment%20Engineering%20College%20Gandhinagar!5e0!3m2!1sen!2sin!4v1" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2026 IIIT Vadodara — All Rights Reserved</p><p>Designed with <span class="heart">❤️</span> for IIIT Vadodara</p></div></div></footer>
-    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
-    <script src="js/navbar.js"></script><script src="js/main.js"></script><script src="js/animations.js"></script><script src="js/counter.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Direct Contact</h4>
+                    <p><i class="fa-solid fa-phone"></i> +91 79 29750281</p>
+                    <p><i class="fa-solid fa-envelope"></i> administration@iiitvadodara.ac.in</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Project</a></li>
+                        <li><a href="admission.html"><i class="fa-solid fa-angle-right"></i> Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Official</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Indian Institute of Information Technology Vadodara &mdash; All Rights Reserved</p>
+                <p>Designed with <span class="heart"><i class="fa-solid fa-heart"></i></span> for IIIT Vadodara</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/counter.js"></script>
 </body>
 </html>

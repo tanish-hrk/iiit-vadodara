@@ -3,142 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>People — IIIT Vadodara</title>
+    <title>Faculty & Staff &mdash; IIIT Vadodara</title>
     <meta name="description" content="Faculty, staff, and PhD scholars at IIIT Vadodara — Computer Science, ECE, Mathematics, Physics, and HSS departments.">
-    <meta property="og:title" content="Faculty & Staff — IIIT Vadodara">
-    <meta property="og:image" content="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png">
-    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/navbar.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <div class="page-loader" id="page-loader"><div class="loader-content"><div class="loader-spinner"><img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="Logo" class="loader-logo"></div><p class="loader-text">Loading</p></div></div>
-    <div class="mobile-overlay" id="mobile-overlay"></div>
-    <nav class="navbar at-top" id="navbar" role="navigation"><div class="nav-container"><a href="index.html" class="nav-logo"><img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="Logo"><div class="nav-logo-text"><span class="eng">Indian Institute of Information Technology Vadodara</span><span class="hindi hindi-text">भारतीय सूचना प्रौद्योगिकी संस्‍थान वडोदरा</span></div></a><div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div><ul class="nav-menu" id="nav-menu"><li class="nav-item"><a href="index.html" class="nav-link">Home</a></li><li class="nav-item"><a href="about.html" class="nav-link">About</a></li><li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li><li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li><li class="nav-item"><a href="research.html" class="nav-link">Research</a></li><li class="nav-item"><a href="people.html" class="nav-link active">People</a></li><li class="nav-item"><a href="students.html" class="nav-link">Students</a></li><li class="nav-item"><a href="placement.html" class="nav-link">Placements</a></li><li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li></ul></div></nav>
+
+    <!-- PAGE LOADER -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-spinner">
+                <img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="IIITV Logo" class="loader-logo">
+            </div>
+            <p class="loader-text">Loading Personnel</p>
+        </div>
+    </div>
+
+    <!-- UTILITY BAR -->
+    <div class="utility-bar">
+        <div class="inner">
+            <div class="audience-links">
+                <a href="students.html"><i class="fa-solid fa-user-graduate"></i> Students</a>
+                <a href="people.html"><i class="fa-solid fa-chalkboard-user"></i> Faculty &amp; Staff</a>
+                <a href="https://iiitvadodara.ac.in/alumni.php"><i class="fa-solid fa-people-group"></i> Alumni</a>
+                <a href="contact.html"><i class="fa-solid fa-person-walking-luggage"></i> Visitors</a>
+            </div>
+            <div class="right-links">
+                <a href="https://betamoodle.iiitvadodara.ac.in/"><i class="fa-solid fa-link"></i> iConnect</a>
+                <a href="https://mail.iiitvadodara.ac.in"><i class="fa-solid fa-envelope"></i> Webmail</a>
+                <a href="people.html"><i class="fa-solid fa-address-book"></i> Directory</a>
+                <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="IIIT Vadodara Logo">
+                <div class="nav-logo-text">
+                    <span class="eng">Indian Institute of Information Technology Vadodara</span>
+                    <span class="hindi hindi-text">भारतीय सूचना प्रौद्योगिकी संस्थान वडोदरा</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span></a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><a href="about.html" class="dropdown-link"><i class="fa-solid fa-landmark"></i> Institute</a></li>
+                        <li class="dropdown-item"><a href="about.html#vision" class="dropdown-link"><i class="fa-solid fa-bullseye"></i> Vision &amp; Mission</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/director.php" class="dropdown-link"><i class="fa-solid fa-user-tie"></i> Director</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+                <li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li>
+                <li class="nav-item"><a href="research.html" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="people.html" class="nav-link active">People</a></li>
+                <li class="nav-item"><a href="students.html" class="nav-link">Students</a></li>
+                <li class="nav-item"><a href="placement.html" class="nav-link">Placements</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
 
     <main>
-        <section class="page-header"><div class="container"><h1 class="reveal">Faculty & Staff</h1><div class="breadcrumb reveal"><a href="index.html">Home</a> <span>/</span> <span>People</span></div></div></section>
+        <!-- PAGE HEADER -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="scroll-reveal">Faculty &amp; Staff</h1>
+                <div class="breadcrumb scroll-reveal"><a href="index.html">Home</a> <span>/</span> <span>People</span></div>
+            </div>
+        </section>
 
-        <!-- Department Filter -->
+        <!-- OUR FACULTY -->
         <section class="section">
             <div class="container">
-                <div class="section-header"><h2 class="reveal">Our Faculty</h2><p class="reveal">Distinguished academicians and researchers across departments</p></div>
-
-                <!-- Department Nav -->
-                <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 3rem;" class="reveal">
-                    <a href="https://iiitvadodara.ac.in/cse1.php" class="btn btn-primary" target="_blank" rel="noopener">Computer Science & Engineering</a>
-                    <a href="https://iiitvadodara.ac.in/ece.php" class="btn btn-outline" target="_blank" rel="noopener">Electronics & Communication</a>
-                    <a href="https://iiitvadodara.ac.in/smh1.php" class="btn btn-outline" target="_blank" rel="noopener">Mathematics & Computing</a>
-                    <a href="https://iiitvadodara.ac.in/smh.php" class="btn btn-outline" target="_blank" rel="noopener">Applied Physics</a>
-                    <a href="https://iiitvadodara.ac.in/smh2.php" class="btn btn-outline" target="_blank" rel="noopener">Humanities & Social Sciences</a>
+                <div class="section-header scroll-reveal">
+                    <h2>Our Faculty</h2>
+                    <p>Distinguished academicians and researchers driving excellence</p>
                 </div>
 
-                <!-- Sample Faculty Cards -->
-                <div class="faculty-grid">
-                    <div class="faculty-card reveal">
-                        <div class="faculty-card-image">
-                            <img src="https://iiitvadodara.ac.in/assets/images/director.jpg" alt="Prof. Dharmendra Singh" loading="lazy">
+                <!-- Department Nav -->
+                <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 4rem;" class="scroll-reveal">
+                    <a href="https://iiitvadodara.ac.in/cse1.php" class="btn btn-primary" target="_blank" rel="noopener"><i class="fa-solid fa-laptop-code"></i> CSE Faculty</a>
+                    <a href="https://iiitvadodara.ac.in/ece.php" class="btn btn-outline" target="_blank" rel="noopener"><i class="fa-solid fa-microchip"></i> ECE Faculty</a>
+                    <a href="https://iiitvadodara.ac.in/smh1.php" class="btn btn-outline" target="_blank" rel="noopener"><i class="fa-solid fa-infinity"></i> Math Faculty</a>
+                    <a href="https://iiitvadodara.ac.in/smh.php" class="btn btn-outline" target="_blank" rel="noopener"><i class="fa-solid fa-atom"></i> Physics Faculty</a>
+                    <a href="https://iiitvadodara.ac.in/smh2.php" class="btn btn-outline" target="_blank" rel="noopener"><i class="fa-solid fa-book"></i> HSS Faculty</a>
+                </div>
+
+                <!-- Sample Faculty Grid -->
+                <div class="stats-grid" style="grid-template-columns: repeat(3, 1fr);">
+                    <!-- Director Card -->
+                    <div class="card scroll-reveal" style="padding: 0; overflow: hidden; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                        <div style="height: 250px; background: var(--off-white); overflow: hidden;">
+                            <img src="https://iiitvadodara.ac.in/assets/images/director.jpg" alt="Prof. Nikhil Kothari" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
-                        <div class="faculty-card-body">
-                            <h4>Prof. Dharmendra Singh</h4>
-                            <p class="dept">Director</p>
-                            <p class="research-area">Signal Processing, Remote Sensing, Microwave Engineering</p>
-                        </div>
-                        <div class="faculty-card-links">
-                            <a href="https://iiitvadodara.ac.in/director.php" title="Profile" target="_blank" rel="noopener">👤</a>
-                            <a href="mailto:director@iiitvadodara.ac.in" title="Email">📧</a>
-                        </div>
-                    </div>
-                    <div class="faculty-card reveal">
-                        <div class="faculty-card-image" style="background: linear-gradient(135deg, var(--primary), var(--primary-light)); display: flex; align-items: center; justify-content: center;"><span style="font-size: 4rem; color: var(--white);">👨‍🏫</span></div>
-                        <div class="faculty-card-body">
-                            <h4>CSE Faculty</h4>
-                            <p class="dept">Computer Science & Engineering</p>
-                            <p class="research-area">AI/ML, Data Science, Cybersecurity, Computer Vision, NLP, Algorithms</p>
-                        </div>
-                        <div class="faculty-card-links">
-                            <a href="https://iiitvadodara.ac.in/cse1.php" title="View Department" target="_blank" rel="noopener">🔗</a>
-                        </div>
-                    </div>
-                    <div class="faculty-card reveal">
-                        <div class="faculty-card-image" style="background: linear-gradient(135deg, #0066CC, #0099CC); display: flex; align-items: center; justify-content: center;"><span style="font-size: 4rem; color: var(--white);">👩‍🏫</span></div>
-                        <div class="faculty-card-body">
-                            <h4>ECE Faculty</h4>
-                            <p class="dept">Electronics & Communication</p>
-                            <p class="research-area">VLSI, Signal Processing, IoT, Embedded Systems, Communication</p>
-                        </div>
-                        <div class="faculty-card-links">
-                            <a href="https://iiitvadodara.ac.in/ece.php" title="View Department" target="_blank" rel="noopener">🔗</a>
+                        <div style="padding: 1.5rem;">
+                            <h4 style="color: var(--primary); margin-bottom: 5px; font-size: 1.1rem;">Prof. Nikhil Kothari</h4>
+                            <p style="color: var(--secondary); font-weight: 600; font-size: 0.85rem; text-transform: uppercase;">Director</p>
+                            <p style="font-size: 0.8rem; color: var(--dark-gray); margin-top: 10px;">Signal Processing, Remote Sensing, Microwave Engineering</p>
+                            <div style="margin-top: 1.5rem; display: flex; gap: 10px;">
+                                <a href="https://iiitvadodara.ac.in/director.php" class="btn btn-outline" style="padding: 8px 12px; font-size: 0.8rem;"><i class="fa-solid fa-user"></i> Profile</a>
+                                <a href="mailto:director@iiitvadodara.ac.in" class="btn btn-primary" style="padding: 8px 12px; font-size: 0.8rem;"><i class="fa-solid fa-envelope"></i> Email</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="faculty-card reveal">
-                        <div class="faculty-card-image" style="background: linear-gradient(135deg, #FFB800, #FFD54F); display: flex; align-items: center; justify-content: center;"><span style="font-size: 4rem;">🔢</span></div>
-                        <div class="faculty-card-body">
-                            <h4>Mathematics Faculty</h4>
-                            <p class="dept">Mathematics & Computing</p>
-                            <p class="research-area">Numerical Analysis, Optimization, Graph Theory, Differential Equations</p>
-                        </div>
-                        <div class="faculty-card-links">
-                            <a href="https://iiitvadodara.ac.in/smh1.php" title="View Department" target="_blank" rel="noopener">🔗</a>
-                        </div>
+                    
+                    <!-- Department placeholders for consistency -->
+                    <div class="card scroll-reveal" style="padding: 2.5rem; text-align: center; --delay: 0.1s">
+                        <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <h4 style="color: var(--primary);">CSE Faculty</h4>
+                        <p style="font-size: 0.9rem; margin-top: 10px;">Visit our comprehensive directory of Computer Science &amp; Engineering faculty members and their research profiles.</p>
+                        <a href="https://iiitvadodara.ac.in/cse1.php" class="btn btn-outline" style="margin-top: 1.5rem;"><i class="fa-solid fa-arrow-right"></i> View Department</a>
                     </div>
-                    <div class="faculty-card reveal">
-                        <div class="faculty-card-image" style="background: linear-gradient(135deg, #2c3e50, #3498db); display: flex; align-items: center; justify-content: center;"><span style="font-size: 4rem; color: var(--white);">⚛️</span></div>
-                        <div class="faculty-card-body">
-                            <h4>Physics Faculty</h4>
-                            <p class="dept">Applied Physics</p>
-                            <p class="research-area">Materials Science, Microwave Absorbing Materials, Nanotechnology</p>
-                        </div>
-                        <div class="faculty-card-links">
-                            <a href="https://iiitvadodara.ac.in/smh.php" title="View Department" target="_blank" rel="noopener">🔗</a>
-                        </div>
-                    </div>
-                    <div class="faculty-card reveal">
-                        <div class="faculty-card-image" style="background: linear-gradient(135deg, #8e44ad, #9b59b6); display: flex; align-items: center; justify-content: center;"><span style="font-size: 4rem; color: var(--white);">📚</span></div>
-                        <div class="faculty-card-body">
-                            <h4>HSS Faculty</h4>
-                            <p class="dept">Humanities & Social Sciences</p>
-                            <p class="research-area">English Language, Communication, Economics, Social Sciences</p>
-                        </div>
-                        <div class="faculty-card-links">
-                            <a href="https://iiitvadodara.ac.in/smh2.php" title="View Department" target="_blank" rel="noopener">🔗</a>
-                        </div>
+
+                    <div class="card scroll-reveal" style="padding: 2.5rem; text-align: center; --delay: 0.2s">
+                        <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"><i class="fa-solid fa-microchip"></i></div>
+                        <h4 style="color: var(--primary);">ECE Faculty</h4>
+                        <p style="font-size: 0.9rem; margin-top: 10px;">Explore the Electronics &amp; Communication Engineering faculty directory and laboratory facilities.</p>
+                        <a href="https://iiitvadodara.ac.in/ece.php" class="btn btn-outline" style="margin-top: 1.5rem;"><i class="fa-solid fa-arrow-right"></i> View Department</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Staff Section -->
+        <!-- STAFF & OFFICERS -->
         <section class="section" style="background: var(--off-white);">
             <div class="container">
-                <div class="section-header"><h2 class="reveal">Staff & Officers</h2></div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                    <a href="https://iiitvadodara.ac.in/officers.php" class="card reveal" style="padding: 2rem; text-align: center;" target="_blank" rel="noopener">
-                        <div style="font-size: 3rem; margin-bottom: 12px;">👔</div>
-                        <h4 style="color: var(--primary);">Officers</h4>
-                        <p>Registrar, Controller of Examinations, and other officers</p>
+                <div class="section-header scroll-reveal">
+                    <h2>Staff &amp; Officers</h2>
+                    <p>The core administration and technical support team</p>
+                </div>
+                <div class="stats-grid">
+                    <a href="https://iiitvadodara.ac.in/officers.php" class="card scroll-reveal" style="text-decoration: none; padding: 2.5rem; text-align: center;">
+                        <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"><i class="fa-solid fa-user-shield"></i></div>
+                        <h4 style="color: var(--primary);">Institute Officers</h4>
+                        <p style="font-size: 0.85rem; margin-top: 8px;">Registrar, Controller of Exams, and Senior Admin</p>
                     </a>
-                    <a href="https://iiitvadodara.ac.in/technical_staff.php" class="card reveal" style="padding: 2rem; text-align: center;" target="_blank" rel="noopener">
-                        <div style="font-size: 3rem; margin-bottom: 12px;">🔧</div>
+                    <a href="https://iiitvadodara.ac.in/technical_staff.php" class="card scroll-reveal" style="text-decoration: none; padding: 2.5rem; text-align: center; --delay: 0.1s">
+                        <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"><i class="fa-solid fa-gears"></i></div>
                         <h4 style="color: var(--primary);">Technical Staff</h4>
-                        <p>Lab assistants, system administrators, and technical support</p>
+                        <p style="font-size: 0.85rem; margin-top: 8px;">Lab assistants and system administrators</p>
                     </a>
-                    <a href="https://iiitvadodara.ac.in/administrative.php" class="card reveal" style="padding: 2rem; text-align: center;" target="_blank" rel="noopener">
-                        <div style="font-size: 3rem; margin-bottom: 12px;">📋</div>
-                        <h4 style="color: var(--primary);">Administrative Staff</h4>
-                        <p>Administrative officers and support personnel</p>
+                    <a href="https://iiitvadodara.ac.in/administrative.php" class="card scroll-reveal" style="text-decoration: none; padding: 2.5rem; text-align: center; --delay: 0.2s">
+                        <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"><i class="fa-solid fa-briefcase"></i></div>
+                        <h4 style="color: var(--primary);">Administrative</h4>
+                        <p style="font-size: 0.85rem; margin-top: 8px;">Support personnel and office staff</p>
                     </a>
-                    <a href="https://iiitvadodara.ac.in/phd_scholars.php" class="card reveal" style="padding: 2rem; text-align: center;" target="_blank" rel="noopener">
-                        <div style="font-size: 3rem; margin-bottom: 12px;">🧑‍🔬</div>
+                    <a href="https://iiitvadodara.ac.in/phd_scholars.php" class="card scroll-reveal" style="text-decoration: none; padding: 2.5rem; text-align: center; --delay: 0.3s">
+                        <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"><i class="fa-solid fa-laptop-code"></i></div>
                         <h4 style="color: var(--primary);">PhD Scholars</h4>
-                        <p>Current doctoral researchers across all departments</p>
+                        <p style="font-size: 0.85rem; margin-top: 8px;">Doctoral researchers across all departments</p>
                     </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2026 IIIT Vadodara — All Rights Reserved</p><p>Designed with <span class="heart">❤️</span> for IIIT Vadodara</p></div></div></footer>
-    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
-    <script src="js/navbar.js"></script><script src="js/main.js"></script><script src="js/animations.js"></script><script src="js/counter.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Internal Portals</h4>
+                    <ul>
+                        <li><a href="https://mail.iiitvadodara.ac.in"><i class="fa-solid fa-angle-right"></i> Webmail</a></li>
+                        <li><a href="https://betamoodle.iiitvadodara.ac.in/"><i class="fa-solid fa-angle-right"></i> iConnect</a></li>
+                        <li><a href="people.html"><i class="fa-solid fa-angle-right"></i> Directory</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Gandhinagar, Gujarat</p>
+                    <p><i class="fa-solid fa-envelope"></i> administration@iiitvadodara.ac.in</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Social</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Indian Institute of Information Technology Vadodara &mdash; All Rights Reserved</p>
+                <p>Designed with <span class="heart"><i class="fa-solid fa-heart"></i></span> for IIIT Vadodara</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/counter.js"></script>
 </body>
 </html>

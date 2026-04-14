@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initCounters() {
-    const counters = document.querySelectorAll('.stat-number[data-target]');
+    // Look for elements with data-target attribute
+    const counters = document.querySelectorAll('[data-target]');
     if (counters.length === 0) return;
 
     const observerOptions = {
@@ -19,14 +20,21 @@ function initCounters() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                animateCounter(entry.target);
-                observer.unobserve(entry.target);
+                // Only animate if it hasn't been animated yet
+                if (!entry.target.classList.contains('animated')) {
+                    animateCounter(entry.target);
+                    entry.target.classList.add('animated');
+                }
             }
         });
     }, observerOptions);
 
     counters.forEach(counter => {
-        observer.observe(counter);
+        // Only watch elements that are meant to be counters (have a number as target)
+        const targetValue = counter.getAttribute('data-target');
+        if (!isNaN(targetValue) && targetValue !== null && targetValue !== '') {
+            observer.observe(counter);
+        }
     });
 }
 
@@ -48,7 +56,16 @@ function animateCounter(element) {
         const easedProgress = easeOutCubic(progress);
         const currentValue = Math.round(startValue + (target - startValue) * easedProgress);
 
-        element.textContent = prefix + formatNumber(currentValue) + suffix;
+        // Update text content
+        // If the element has children (like nested spans), we might want to only update a specific one
+        // but for now, we'll replace the content or update the specific node.
+        if (element.children.length === 0) {
+            element.textContent = prefix + formatNumber(currentValue) + suffix;
+        } else {
+            // Find a child or update the first text node? 
+            // Let's assume the element itself is the target if it has data-target
+            element.textContent = prefix + formatNumber(currentValue) + suffix;
+        }
 
         if (progress < 1) {
             requestAnimationFrame(update);
@@ -81,7 +98,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.2 });
 
     chartBars.forEach(bar => {
-        bar.style.height = '0';
+        // If height isn't set in style attribute or CSS, initialize it
+        if (!bar.style.height || bar.style.height === '0px') {
+            bar.style.height = '0';
+        }
         observer.observe(bar);
     });
 });

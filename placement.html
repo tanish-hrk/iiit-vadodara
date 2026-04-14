@@ -3,127 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Placements — IIIT Vadodara</title>
+    <title>Placements &mdash; IIIT Vadodara</title>
     <meta name="description" content="Placement statistics and recruiters at IIIT Vadodara — Top companies, packages, and placement trends.">
-    <meta property="og:title" content="Placements — IIIT Vadodara">
-    <meta property="og:image" content="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png">
-    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/navbar.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <div class="page-loader" id="page-loader"><div class="loader-content"><div class="loader-spinner"><img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="Logo" class="loader-logo"></div><p class="loader-text">Loading</p></div></div>
-    <div class="mobile-overlay" id="mobile-overlay"></div>
-    <nav class="navbar at-top" id="navbar" role="navigation"><div class="nav-container"><a href="index.html" class="nav-logo"><img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="Logo"><div class="nav-logo-text"><span class="eng">Indian Institute of Information Technology Vadodara</span><span class="hindi hindi-text">भारतीय सूचना प्रौद्योगिकी संस्‍थान वडोदरा</span></div></a><div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div><ul class="nav-menu" id="nav-menu"><li class="nav-item"><a href="index.html" class="nav-link">Home</a></li><li class="nav-item"><a href="about.html" class="nav-link">About</a></li><li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li><li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li><li class="nav-item"><a href="research.html" class="nav-link">Research</a></li><li class="nav-item"><a href="people.html" class="nav-link">People</a></li><li class="nav-item"><a href="students.html" class="nav-link">Students</a></li><li class="nav-item"><a href="placement.html" class="nav-link active">Placements</a></li><li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li></ul></div></nav>
+
+    <!-- PAGE LOADER -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-spinner">
+                <img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="IIITV Logo" class="loader-logo">
+            </div>
+            <p class="loader-text">Loading Placements</p>
+        </div>
+    </div>
+
+    <!-- UTILITY BAR -->
+    <div class="utility-bar">
+        <div class="inner">
+            <div class="audience-links">
+                <a href="students.html"><i class="fa-solid fa-user-graduate"></i> Students</a>
+                <a href="people.html"><i class="fa-solid fa-chalkboard-user"></i> Faculty &amp; Staff</a>
+                <a href="https://iiitvadodara.ac.in/alumni.php"><i class="fa-solid fa-people-group"></i> Alumni</a>
+                <a href="contact.html"><i class="fa-solid fa-person-walking-luggage"></i> Visitors</a>
+            </div>
+            <div class="right-links">
+                <a href="https://betamoodle.iiitvadodara.ac.in/"><i class="fa-solid fa-link"></i> iConnect</a>
+                <a href="https://mail.iiitvadodara.ac.in"><i class="fa-solid fa-envelope"></i> Webmail</a>
+                <a href="people.html"><i class="fa-solid fa-address-book"></i> Directory</a>
+                <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="https://iiitvadodara.ac.in/assets/images/IIIT_VADODARA_LOGO.png" alt="IIIT Vadodara Logo">
+                <div class="nav-logo-text">
+                    <span class="eng">Indian Institute of Information Technology Vadodara</span>
+                    <span class="hindi hindi-text">भारतीय सूचना प्रौद्योगिकी संस्थान वडोदरा</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span></a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><a href="about.html" class="dropdown-link"><i class="fa-solid fa-landmark"></i> Institute</a></li>
+                        <li class="dropdown-item"><a href="about.html#vision" class="dropdown-link"><i class="fa-solid fa-bullseye"></i> Vision &amp; Mission</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><a href="https://iiitvadodara.ac.in/director.php" class="dropdown-link"><i class="fa-solid fa-user-tie"></i> Director</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+                <li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li>
+                <li class="nav-item"><a href="research.html" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="people.html" class="nav-link">People</a></li>
+                <li class="nav-item"><a href="students.html" class="nav-link">Students</a></li>
+                <li class="nav-item"><a href="placement.html" class="nav-link active">Placements</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
 
     <main>
-        <section class="page-header"><div class="container"><h1 class="reveal">Training & Placements</h1><div class="breadcrumb reveal"><a href="index.html">Home</a> <span>/</span> <span>Placements</span></div></div></section>
+        <!-- PAGE HEADER -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="scroll-reveal">Training &amp; Placements</h1>
+                <div class="breadcrumb scroll-reveal"><a href="index.html">Home</a> <span>/</span> <span>Placements</span></div>
+            </div>
+        </section>
 
-        <!-- Key Stats -->
+        <!-- HIGHLIGHT STATS -->
         <section class="section stats-section">
             <div class="container">
                 <div class="stats-grid">
-                    <div class="stat-card reveal">
-                        <div class="stat-icon">💰</div>
-                        <div class="stat-number" data-target="44" data-suffix=" LPA">0</div>
+                    <div class="stat-card scroll-reveal">
+                        <div class="stat-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+                        <div class="stat-number"><span class="counter" data-target="44">0</span><span> LPA</span></div>
                         <div class="stat-label">Highest Package</div>
                     </div>
-                    <div class="stat-card reveal">
-                        <div class="stat-icon">📈</div>
-                        <div class="stat-number" data-target="12" data-suffix=" LPA">0</div>
+                    <div class="stat-card scroll-reveal" style="--delay: 0.1s">
+                        <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="stat-number"><span class="counter" data-target="12">0</span><span> LPA</span></div>
                         <div class="stat-label">Average Package</div>
                     </div>
-                    <div class="stat-card reveal">
-                        <div class="stat-icon">🎯</div>
-                        <div class="stat-number" data-target="95" data-suffix="%">0</div>
+                    <div class="stat-card scroll-reveal" style="--delay: 0.2s">
+                        <div class="stat-icon"><i class="fa-solid fa-bullseye"></i></div>
+                        <div class="stat-number"><span class="counter" data-target="95">0</span><span>%</span></div>
                         <div class="stat-label">Placement Rate</div>
                     </div>
-                    <div class="stat-card reveal">
-                        <div class="stat-icon">🏢</div>
-                        <div class="stat-number" data-target="120" data-suffix="+">0</div>
+                    <div class="stat-card scroll-reveal" style="--delay: 0.3s">
+                        <div class="stat-icon"><i class="fa-solid fa-building"></i></div>
+                        <div class="stat-number"><span class="counter" data-target="120">0</span><span>+</span></div>
                         <div class="stat-label">Recruiters</div>
-                    </div>
-                    <div class="stat-card reveal">
-                        <div class="stat-icon">📄</div>
-                        <div class="stat-number" data-target="300" data-suffix="+">0</div>
-                        <div class="stat-label">Offers Made</div>
-                    </div>
-                    <div class="stat-card reveal">
-                        <div class="stat-icon">🌟</div>
-                        <div class="stat-number" data-target="8" data-suffix=" LPA">0</div>
-                        <div class="stat-label">Median Package</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Year-wise Chart -->
+        <!-- TREND CHART -->
         <section class="section">
             <div class="container">
-                <div class="section-header"><h2 class="reveal">Year-wise Placement Trends</h2></div>
-                <div class="chart-container reveal" style="max-width: 800px; margin: 0 auto; padding-bottom: 60px;">
-                    <div class="chart-bar" data-height="55" style="background: var(--button-gradient);">
+                <div class="section-header scroll-reveal">
+                    <h2>Growth in Placements</h2>
+                    <p>Year-wise percentage of successful career starts</p>
+                </div>
+                <div class="chart-container scroll-reveal" style="max-width: 900px; margin: 0 auto; height: 350px;">
+                    <div class="chart-bar" style="height: 60%;" data-tooltip="2019-20: 78%">
                         <span class="chart-bar-value">78%</span>
                         <span class="chart-bar-label">2019-20</span>
                     </div>
-                    <div class="chart-bar" data-height="62" style="background: var(--button-gradient);">
+                    <div class="chart-bar" style="height: 65%;" data-tooltip="2020-21: 82%">
                         <span class="chart-bar-value">82%</span>
                         <span class="chart-bar-label">2020-21</span>
                     </div>
-                    <div class="chart-bar" data-height="70" style="background: var(--button-gradient);">
+                    <div class="chart-bar" style="height: 70%;" data-tooltip="2021-22: 86%">
                         <span class="chart-bar-value">86%</span>
                         <span class="chart-bar-label">2021-22</span>
                     </div>
-                    <div class="chart-bar" data-height="78" style="background: var(--button-gradient);">
+                    <div class="chart-bar" style="height: 75%;" data-tooltip="2022-23: 90%">
                         <span class="chart-bar-value">90%</span>
                         <span class="chart-bar-label">2022-23</span>
                     </div>
-                    <div class="chart-bar" data-height="85" style="background: var(--button-gradient);">
+                    <div class="chart-bar" style="height: 85%;" data-tooltip="2023-24: 92%">
                         <span class="chart-bar-value">92%</span>
                         <span class="chart-bar-label">2023-24</span>
                     </div>
-                    <div class="chart-bar" data-height="95" style="background: linear-gradient(180deg, var(--secondary), var(--secondary-dark));">
-                        <span class="chart-bar-value" style="color: var(--secondary-dark);">95%</span>
-                        <span class="chart-bar-label">2024-25</span>
+                    <div class="chart-bar" style="height: 95%; background: var(--secondary);" data-tooltip="2024-25: 95%">
+                        <span class="chart-bar-value" style="color: var(--primary);">95%</span>
+                        <span class="chart-bar-label" style="font-weight: 700;">2024-25</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Recruiters Grid -->
+        <!-- RECRUITERS -->
         <section class="section" style="background: var(--off-white);">
             <div class="container">
-                <div class="section-header"><h2 class="reveal">Our Recruiters</h2><p class="reveal">Trusted by India's and the world's leading companies</p></div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Google</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Microsoft</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Amazon</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Adobe</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Flipkart</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Goldman Sachs</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">JP Morgan</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Infosys</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">TCS</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Wipro</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Deloitte</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Oracle</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Samsung</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Qualcomm</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Cisco</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Capgemini</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Cognizant</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">HCL</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Accenture</div>
-                    <div class="card reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; color: var(--text-dark);">Tech Mahindra</div>
+                <div class="section-header scroll-reveal">
+                    <h2>Top Hiring Partners</h2>
+                    <p>Connecting our students with global industry leaders</p>
                 </div>
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="https://sites.google.com/iiitvadodara.ac.in/placement2021/home" class="btn btn-primary reveal" target="_blank" rel="noopener">View Full Placement Report →</a>
+                <!-- Company Logo Placeholders / List -->
+                <div class="stats-grid" style="grid-template-columns: repeat(5, 1fr); gap: 15px;">
+                    <div class="card scroll-reveal" style="padding: 1.5rem; text-align: center; font-weight: 700;">Google</div>
+                    <div class="card scroll-reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; --delay: 0.1s">Microsoft</div>
+                    <div class="card scroll-reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; --delay: 0.2s">Amazon</div>
+                    <div class="card scroll-reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; --delay: 0.3s">Adobe</div>
+                    <div class="card scroll-reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; --delay: 0.4s">Flipkart</div>
+                    <div class="card scroll-reveal" style="padding: 1.5rem; text-align: center; font-weight: 700;">Goldman Sachs</div>
+                    <div class="card scroll-reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; --delay: 0.1s">JP Morgan</div>
+                    <div class="card scroll-reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; --delay: 0.2s">Oracle</div>
+                    <div class="card scroll-reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; --delay: 0.3s">Qualcomm</div>
+                    <div class="card scroll-reveal" style="padding: 1.5rem; text-align: center; font-weight: 700; --delay: 0.4s">Samsung</div>
+                </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="https://sites.google.com/iiitvadodara.ac.in/placement2021/home" class="btn btn-primary" target="_blank" rel="noopener"><i class="fa-solid fa-file-invoice-dollar"></i> View Detailed Placement Report</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2026 IIIT Vadodara — All Rights Reserved</p><p>Designed with <span class="heart">❤️</span> for IIIT Vadodara</p></div></div></footer>
-    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
-    <script src="js/navbar.js"></script><script src="js/main.js"></script><script src="js/animations.js"></script><script src="js/counter.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Placement Cell</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Block No. 9, GEC, Gandhinagar</p>
+                    <p><i class="fa-solid fa-envelope"></i> placement@iiitvadodara.ac.in</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://iiitvadodara.ac.in/pdf/Placement_Brochure_2023-24.pdf"><i class="fa-solid fa-angle-right"></i> Placement Brochure</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact T&amp;P Cell</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Indian Institute of Information Technology Vadodara &mdash; All Rights Reserved</p>
+                <p>Designed with <span class="heart"><i class="fa-solid fa-heart"></i></span> for IIIT Vadodara</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/counter.js"></script>
 </body>
 </html>
